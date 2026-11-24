@@ -68,9 +68,9 @@ docs/          runtime specification, reproducibility record, and documentation 
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-python analysis/results_table.py                 # Table I
-python analysis/paper_numbers.py                 # the comparisons quoted in the article
-python analysis/figures.py                       # Fig. 4 and Fig. 5 -> analysis/results/figures/
+python analysis/main_results/results_table.py                 # Table I
+python analysis/main_results/paper_numbers.py                 # the comparisons quoted in the article
+python analysis/main_results/figures.py                       # Fig. 4 and Fig. 5 -> analysis/results/figures/
 bash profiling/code/pipeline/run_all.sh          # labels and routers from the collected responses
 ```
 

@@ -28,7 +28,7 @@ routers in `deployment/routers/` byte for byte (identical MD5).
 
 **Article numbers and figures.** All twelve rows of Table I and every result quoted in Sections IV and V were
 reproduced by the scripts in `docs/reviewers/README.md`. The one exception is the 460 KiB image-distribution estimate,
-which is arithmetic rather than a script output. `analysis/figures.py` redrew Fig. 4 and Fig. 5; the PNG images and
+which is arithmetic rather than a script output. `analysis/main_results/figures.py` redrew Fig. 4 and Fig. 5; the PNG images and
 their data files were byte-identical to the committed ones, and the PDFs differ only in their embedded creation date.
 
 **Parsing rules.** `analysis/output_checks/parsing_rules_reimpl.py` re-implements the category and severity rules in
@@ -42,7 +42,7 @@ with the deployed code, and all outputs agreed:
 | Pi deployed Python | 36,626 | 60,000 |
 | Jetson deployed parser | — | 30,000 label blocks |
 
-**Power.** `analysis/power_summary.py` reproduced the device powers used in the cost model from the raw logs: M5
+**Power.** `analysis/system_costs/power_summary.py` reproduced the device powers used in the cost model from the raw logs: M5
 1.2154 W, Pi 7.5564 W, and Jetson 11.199 W. The two Pi recordings differed by 0.56% and the two Jetson recordings by
 0.70%. The USB meter's accumulated energy agreed with mean power × time within 0.07%.
 
@@ -60,7 +60,7 @@ whose items appear in a different order, and the column widths of one table.
 | Added the MEDIC test-split manifest; scripts read it from the repository instead of an external drive. | `heldout/results/medic_manifest_test.csv` |
 | Saved the pre-correction label files instead of reading them from the version-control history; the files are byte-identical to those versions. | `revision/first_submission/labels_before_severity_fix/` |
 | The parsing check reads the listing stored next to it. | `analysis/output_checks/parsing_rules.tex` |
-| Added the Jetson power logs, copied from the device with matching MD5, and a script that computes the device powers. | `profiling/results/power/`, `analysis/power_summary.py` |
+| Added the Jetson power logs, copied from the device with matching MD5, and a script that computes the device powers. | `profiling/results/power/`, `analysis/system_costs/power_summary.py` |
 | Renamed the human-rating files to `rater00_author` and `rater01`–`rater09`, keeping their order. The rating site's user and page identifiers were removed; the scores are unchanged. | `revision/human_evaluation/ratings/` |
 | Updated the generator's path in the first comment line of the generated router code. | `deployment/m5_firmware/router_policy.cpp`, `revision/eidseg/runtime/firmware/router_policy.cpp` |
 | Removed the router BSSID and network name; the optional setting is commented out. | `platformio.ini` |
@@ -73,5 +73,5 @@ whose items appear in a different order, and the column widths of one table.
 - The GPT-4o judge (`profiling/code/pipeline/00_gpt_judge.py`), which makes paid API calls; its outputs are included.
 - Scripts that need the dataset images: the GPT-4o judge, `revision/eidseg/dataset/prepare_eidseg.py`, the page
   builders in `revision/human_evaluation/rating_page/` and `revision/label_checks/`,
-  `heldout/code/sample_test_images.py`, and the `eidseg` mode of `analysis/exclusion_sensitivity.py`.
+  `heldout/code/sample_test_images.py`, and the `eidseg` mode of `analysis/sensitivity/exclusion_sensitivity.py`.
 - Collecting human ratings again.

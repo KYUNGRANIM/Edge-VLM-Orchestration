@@ -30,7 +30,7 @@ PIPE = M5VLM / "analysis"
 load = lambda p: [json.loads(l) for l in open(p) if l.strip()]  # noqa: E731
 
 # ---------------- M5 parser: the verified port and the alternative ----------------
-src = (PIPE / "verify_response_rules.py").read_text()
+src = (PIPE / "output_checks/verify_response_rules.py").read_text()
 fn = {n.name: ast.get_source_segment(src, n) for n in ast.parse(src).body if isinstance(n, ast.FunctionDef)}
 OLD, NEW = 'elif has(low, "mild", ', 'elif "mild" in low: sev = 1\n    elif has(low, '
 assert fn["m5_labels"].count(OLD) == 1
@@ -45,7 +45,7 @@ KW = ("severe", "not severe", "no severe", "not a severe", "moderate", "mild") +
 
 # ---------------- Table I accounting, router helpers, quality score ----------------
 with contextlib.redirect_stdout(io.StringIO()):
-    T = runpy.run_path(str(PIPE / "results_table.py"))
+    T = runpy.run_path(str(PIPE / "main_results/results_table.py"))
 E = runpy.run_path(str(M5VLM / "deployment" / "export_device_router.py"), run_name="reuse")
 sev_soft_score = runpy.run_path(str(M5VLM / "profiling/code/pipeline/01_quality_components.py"), run_name="reuse")["sev_soft_score"]
 run, q_run, ids, Q, cost, alltier, TIERS = (T[k] for k in ("run", "q_run", "ids", "Q", "cost", "alltier", "TIERS"))

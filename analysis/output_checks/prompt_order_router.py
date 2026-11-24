@@ -3,7 +3,7 @@
 
     /opt/anaconda3/bin/python3 analysis/output_checks/prompt_order_router.py [n_random]   # default 20 random subsets
 
-Read-only; prints only. Data and Table I accounting come from analysis/results_table.py (run with
+Read-only; prints only. Data and Table I accounting come from analysis/main_results/results_table.py (run with
 runpy, output suppressed); the first-prompt rule from prompt_order_provenance.profiling_first_prompt() (primary-first =
 even index within the category's sorted file names, backup-first = odd; the 9 images re-collected in a later pass are
 left out of both groups).
@@ -35,7 +35,7 @@ N_RAND = int(sys.argv.pop(1)) if len(sys.argv) > 1 else 20  # popped: results_ta
 from prompt_order_provenance import may_records, profiling_first_prompt  # noqa: E402
 
 with contextlib.redirect_stdout(io.StringIO()):
-    G = runpy.run_path(str(M5VLM / "analysis/results_table.py"))
+    G = runpy.run_path(str(M5VLM / "analysis/main_results/results_table.py"))
 prof, pids, y, run, ids, Qr, ours, alltier = (G[k] for k in ("prof", "pids", "y", "run", "ids", "Q", "ours", "alltier"))
 Qr = Qr["run"]
 make_dt, to_matrix, sf1, sf2, per_image, Q_TH = (G[k] for k in ("make_dt", "to_matrix", "stage1_features",

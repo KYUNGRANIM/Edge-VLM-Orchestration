@@ -11,40 +11,40 @@ Related pages: [`prompts.md`](prompts.md) (every prompt, verbatim) and
 
 | Article item | Script |
 |---|---|
-| Table I: fixed and direct baselines, Confidence-Only, our policy, reference | `analysis/results_table.py` |
-| Table I: M5–Pi Cascade and Primary-Only; Section IV-C comparisons, reference gap, permutation test; training-set sizes | `analysis/paper_numbers.py` |
-| Table I: FrugalGPT-inspired and M5–Jetson cascades; the quality-constrained cascade | `analysis/learned_cascade.py` |
-| Confidence intervals (Newcombe; paired bootstrap) | `analysis/paired_statistics.py` |
-| Human–GPT agreement and the Jetson-offset check | `analysis/judge_sensitivity_nonauthor.py` |
-| Stage 2 retrained on out-of-fold forwarded samples | `analysis/stage2_mismatch.py` |
-| Earlier-response-set sensitivity check | `analysis/robustness_supplement.py` (section C) |
-| Auxiliary-path latency check | `analysis/critical_path.py` |
-| Held-out images with near-duplicates in the profiling set | `analysis/exclusion_sensitivity.py` |
-| Power measurements and their repeatability | `analysis/power_summary.py` |
-| Profiling cost (device-hours, energy) | `analysis/profiling_requirements.py`, `analysis/profiling_cost.py` |
+| Table I: fixed and direct baselines, Confidence-Only, our policy, reference | `analysis/main_results/results_table.py` |
+| Table I: M5–Pi Cascade and Primary-Only; Section IV-C comparisons, reference gap, permutation test; training-set sizes | `analysis/main_results/paper_numbers.py` |
+| Table I: FrugalGPT-inspired and M5–Jetson cascades; the quality-constrained cascade | `analysis/main_results/learned_cascade.py` |
+| Confidence intervals (Newcombe; paired bootstrap) | `analysis/main_results/paired_statistics.py` |
+| Human–GPT agreement and the Jetson-offset check | `analysis/judge_validation/judge_sensitivity_nonauthor.py` |
+| Stage 2 retrained on out-of-fold forwarded samples | `analysis/router_analysis/stage2_mismatch.py` |
+| Earlier-response-set sensitivity check | `analysis/robustness/robustness_supplement.py` (section C) |
+| Auxiliary-path latency check | `analysis/system_costs/critical_path.py` |
+| Held-out images with near-duplicates in the profiling set | `analysis/sensitivity/exclusion_sensitivity.py` |
+| Power measurements and their repeatability | `analysis/system_costs/power_summary.py` |
+| Profiling cost (device-hours, energy) | `analysis/router_analysis/profiling_requirements.py`, `analysis/router_analysis/profiling_cost.py` |
 | EIDSeg results | `revision/eidseg/runtime/pipeline/paper_numbers_eidseg.py` |
-| Low-bandwidth latency scenario | `analysis/bandwidth_sensitivity.py` |
-| Fig. 4 and Fig. 5 | `analysis/figures.py` (writes `analysis/results/figures/`) |
+| Low-bandwidth latency scenario | `analysis/system_costs/bandwidth_sensitivity.py` |
+| Fig. 4 and Fig. 5 | `analysis/main_results/figures.py` (writes `analysis/results/figures/`) |
 
 The image-distribution traffic for the two auxiliary M5 devices (about 460 KiB per request) is two copies of the
 230 KiB camera upload in Table I; no script computes it.
 
 ## Additional analyses in the response to reviewers
 
-| Topic | Scripts |
+The analysis scripts are grouped by topic (see `analysis/README.md`).
+
+| Topic | Where |
 |---|---|
-| GPT-4o judge: human agreement, tier bias, re-scoring, repeatability | `analysis/judge_sensitivity.py`, `judge_sensitivity_nonauthor.py`, `judge_sensitivity_rejudge.py`, `judge_retest.py` |
-| Statistics: paired intervals, non-inferiority margin, multiple comparisons, event-level resampling | `analysis/paired_statistics.py`, `robustness.py`, `event_bootstrap.py`, `robustness_supplement.py` |
-| Cost weights, quality weights, and the reference tolerance | `analysis/cost_weights.py`, `quality_sensitivity.py`, `quality_sensitivity_first_run.py` |
-| Learned-cascade baselines and full operating curves | `analysis/learned_cascade.py`, `operating_points.py`, `cost_matching_sources.py` |
-| Agreement among agents and the Primary-Only comparison | `analysis/consistency_stats.py`, `primary_only_gap.py` |
-| Stage 2 training versus deployment inputs | `analysis/stage2_mismatch.py` |
-| How much profiling the routers need | `analysis/profiling_requirements.py`, `profiling_cost.py` |
-| Generalization: leave-one-event-out and EIDSeg | `analysis/event_split.py`, `revision/eidseg/` |
-| Network conditions and a shared Jetson | `analysis/bandwidth_sensitivity.py`, `wireless_sensitivity.py`, `shared_jetson.py`, `revision/load_test/` |
-| Energy measurement | `analysis/power_summary.py`, `jetson_power_sensitivity.py` |
-| Output processing: parsing rules, retries, prompt order, severity mapping | `analysis/output_checks/`, `analysis/verify_response_rules.py` |
-| Comparison with the first submission | `revision/first_submission/`, `analysis/primary_only_gap.py` |
+| GPT-4o judge: human agreement, tier bias, re-scoring, repeatability | `analysis/judge_validation/` |
+| Paired intervals and the non-inferiority margin | `analysis/main_results/paired_statistics.py` |
+| Multiple comparisons, event-level resampling, leave-one-event-out evaluation | `analysis/robustness/` |
+| Cost weights, quality weights, the reference tolerance, cost-matching sources, near-duplicate images | `analysis/sensitivity/` |
+| Learned-cascade baselines and full operating curves | `analysis/main_results/learned_cascade.py`, `analysis/main_results/operating_points.py` |
+| Router behavior: agreement among agents, the Primary-Only gap, Stage 2 training versus deployment inputs, how much profiling the routers need | `analysis/router_analysis/` |
+| Latency accounting, network conditions, energy measurement, a shared Jetson | `analysis/system_costs/`, `revision/load_test/` |
+| Output processing: parsing rules, retries, prompt order, severity mapping | `analysis/output_checks/` |
+| Generalization to another dataset | `revision/eidseg/` |
+| Comparison with the first submission | `revision/first_submission/`, `analysis/router_analysis/primary_only_gap.py` |
 
 Each script's docstring states what it computes.
 

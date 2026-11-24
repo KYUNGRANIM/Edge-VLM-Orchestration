@@ -63,8 +63,8 @@ became 0.70, agreement with the human median stayed at 88.3% (κ = 0.77), and th
 ## Reproducing the numbers
 
 ```bash
-python analysis/judge_sensitivity_nonauthor.py   # nine raters (primary) and all ten; agreement, tier difference, Jetson offset
-python analysis/judge_sensitivity_rejudge.py     # the same with the re-scored judge outputs
+python analysis/judge_validation/judge_sensitivity_nonauthor.py   # nine raters (primary) and all ten; agreement, tier difference, Jetson offset
+python analysis/judge_validation/judge_sensitivity_rejudge.py     # the same with the re-scored judge outputs
 ```
 
 Both scripts print the values above.
