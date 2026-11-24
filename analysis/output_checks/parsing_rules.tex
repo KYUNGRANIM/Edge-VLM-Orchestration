@@ -1,0 +1,147 @@
+\textit{Category and severity parsing rules.}
+The listings below give the complete category and severity rules used in the final MEDIC run. The profiling and earlier held-out collections used the same rules: the M5 function is byte-identical in the three firmware versions, and the Pi and Jetson parsing functions are identical, apart from comments and docstrings, in the runtime and collection code. Pi A and Pi B use identical functions.
+
+\textit{M5 (all three agents).}
+The parser reads the final processed response stored for the agent, not the raw model output. This text is the result of template removal, sentence selection, and validation, and includes any predefined action sentence appended to an M5 A response. Validation rejects responses that contain bytes above 127, so the parser input is ASCII. The text is lowercased, and every test is plain substring containment without word boundaries. For example, \texttt{fire} also matches \texttt{firefighters}, \texttt{wind} matches \texttt{window}, and \texttt{severe} matches \texttt{severely}. In the listing, \texttt{\{a, b\}} is true when at least one listed term occurs, \texttt{"a"} is true when that term occurs, and \texttt{\&} and \texttt{!} denote conjunction and negation. Each satisfied row adds its weight once. All scores are integers.
+
+\begin{lstlisting}[style=reviewprompt]
+CATEGORY
+Step 1 (explicit terms; the first matching row wins)
+  earthquake : {earthquake, quake}
+  hurricane  : {hurricane, cyclone, typhoon, tornado}
+  landslide  : {landslide, mudslide, rockslide, rockfall}
+  flood      : {flood, inundat}
+  fire       : {fire, wildfire, blaze, flame}
+Step 2 (only if step 1 gave landslide; otherwise the step-1 category is final)
+  earthquake : !{slope, hillside, mud, soil, debris flow, mudflow, rockfall, erosion,
+                 cliff face, embankment}
+               & {concrete, structural, rubble, crumbled, earthquake, aftershock,
+                 collapsed building, cracked wall, collapsed structure}
+Step 3 (only if step 1 found no term)
+  fire       : "burn" & {burning, burned, burnt, smoke}
+  Otherwise start from EQ = HU = FL = LA = 0 and add the weight of each satisfied row:
+  EQ +4 : {seismic, tremor, aftershock}
+  EQ +3 : {rubble, crumbled}
+  EQ +4 : {fissure, sinkhole}
+  EQ +3 : {collapsed building, collapsed structure, building collapse}
+  EQ +2 : "structural" & {collapse, damage}
+  EQ +2 : "cracked" & {wall, road, foundation}
+  EQ +2 : "concrete" & {collapse, damage, crumble}
+  HU +4 : {storm surge, storm damage, tropical storm}
+  HU +2 : {wind, gust}
+  HU +3 : "uprooted"
+  HU +3 : {fallen tree, tree fell, toppled tree}
+  HU +2 : "roof" & {blown, torn}
+  HU +2 : {power line, powerline, downed}
+  HU +3 : "coastal" & {damage, flood}
+  FL +4 : {submerge, waterlog}
+  FL +3 : {overflow, water level}
+  FL +4 : "inundat"
+  FL +2 : "water" & {rising, rose}
+  LA +3 : {slope, hillside}
+  LA +3 : {cliff, boulder}
+  LA +3 : {erosion, eroded}
+  LA +4 : {debris flow, mudflow}
+  Then, only if HU < 3 & FL < 3 & LA < 3:
+  EQ +1 : {collapsed, collapse}
+  EQ +1 : "debris"
+  best = max(EQ, HU, FL, LA)
+  best < 2 -> other_disaster; otherwise the first of earthquake (EQ), flood (FL),
+  hurricane (HU), landslide (LA) whose score equals best
+
+SEVERITY
+negated = {not severe, no severe, not a severe}
+Step 1 (the first matching row wins)
+  2  : "severe" & !negated
+  1  : "moderate"
+  0  : {mild, low severity, minor, low damage, minimal damage, little or no, little to no}
+Step 2 (only if step 1 found no row; start from score = 0)
+  +2 : {massive, devastating, catastroph, widespread}
+  +2 : {casualt, killed, fatal, dead, death}
+  +2 : {significant, major, extensive, destruct}
+  +1 : {destroy, collaps, rubble}
+  +1 : {injur, trapped, evacuat, rescue}
+  +1 : {block, scatter, displace}
+  severity = 2 if score >= 3; 1 if score = 2; 0 otherwise
+\end{lstlisting}
+
+\textit{Pi A and Pi B.}
+Pi A parses the selected situation sentence and action sentence joined by one space, with leading and trailing whitespace removed. Pi B parses its selected description, or the fixed fallback output above. The text is lowercased with Python \texttt{str.lower}, and every pattern is applied with Python \texttt{re.search}, so \texttt{\textbackslash b} and \texttt{\textbackslash w} follow Unicode word rules. Long patterns may wrap visually in the PDF; such line breaks and indentation are not part of the regular expressions. \texttt{AND} and \texttt{AND NOT} combine separate searches. Every matching row adds its weight once to its category. If at least one row matches, the category with the highest total is returned. A tie goes to the category that received its first points earliest in the row order. If no row matches, the fallback rows are checked in order.
+
+
+\begin{lstlisting}[style=reviewprompt,breakatwhitespace=false]
+C = \b(?:coast|coastal|shore|shoreline|beach|seafront|waterfront)\b
+
+CATEGORY ROWS (category, weight, condition)
+
+fire       +10 \b(?:fire|wildfire|blaze)\b
+fire        +6 \b(?:flames?|burning|burned|burnt|charr\w*|soot|scorch\w*|ablaze|inferno|smoldering)\b
+fire        +3 \bsmoke\b AND NOT \b(?:flood|water|wave)\b
+fire        +4 \bengulfed\b AND NOT \b(?:flood|water|wave)\b
+flood      +10 \b(?:flood|flooded|flooding|inundat\w*)\b
+flood       +6 \b(?:floodwaters?|submerged|waterlogged|waterline)\b
+flood       +4 \bwater\b AND \b(?:rising|level|deep|knee|waist|washed|standing|covering|filled)\b
+flood       +6 \b(?:river|stream)\s+(?:overflow\w*|burst|breached)\b
+hurricane  +15 \bhurricane\b
+hurricane  +12 \b(?:cyclone|typhoon|tornado)\b
+hurricane   +6 \bstorm\b AND \b(?:roof|tree|boat|pole|wind|torn|uprooted|ripped|surge)\b
+hurricane   +4 \b(?:uprooted|torn\s+(?:off|apart|away)|ripped\s+(?:off|apart|away))\b
+hurricane   +5 \b(?:snapped|fallen|toppled|downed|knocked\s+down)\s+(?:trees?|branches|poles?|power\s*lines?|wires?|fences?)\b
+hurricane   +5 \b(?:wind|storm)\s+(?:damage|debris)\b
+hurricane   +4 \b(?:roof|shingles?|siding)\b AND \b(?:torn|ripped|blown|peeled|twisted)\b
+hurricane   +6 \b(?:storm\s*surge|coastal\s+wave|tidal\s+wave)\b
+hurricane   +6 C AND \b(?:damaged|destroyed|wreck|debris|scattered|battered|ravaged|flooded|submerged|broken|smashed|wreckage)\b
+hurricane   +3 \b(?:twisted|blown\s+(?:off|away|down))\b AND \b(?:roof|wall|tree|pole|fence|sign|structure)\b
+landslide  +10 \b(?:landslide|mudslide|rockslide)\b
+landslide   +8 \b(?:rockfall|debris\s*slide|slope\s*failure|slope\s*collapse)\b
+landslide   +5 \b(?:boulder|hillside|embankment|slope)\b AND \b(?:block|road|path|collaps|down|onto)\b
+landslide   +4 \b(?:road|highway|path|route|railway|tracks?)\b
+               AND \b(?:block\w*|obstruct\w*|cover\w*)\b
+               AND \b(?:debris|rocks?|mud|soil|earth|dirt|boulder)\b
+earthquake +10 \b(?:earthquake|seismic|quake|tremor|aftershock)\b
+earthquake  +5 \bcollaps\w*\b AND \b(?:building|structure|wall|floor|story|storey|house|apartment|concrete|tower)\b
+earthquake  +4 \brubble\b AND \b(?:building|structure|concrete|bricks?)\b
+earthquake  +2 \brubble\b AND NOT \b(?:building|structure|concrete|bricks?)\b
+earthquake  +3 \b(?:cracked|tilted|leaning)\b AND \b(?:building|wall|tower|structure|column)\b
+earthquake  +3 \bground\s+(?:cracks?|fissures?)\b
+hurricane   +4 \b(?:fallen|toppled|uprooted)\s+tree\b AND \b(?:road|street|path)\b
+hurricane   +3 \b(?:boat|ship|vessel|yacht)\b AND \b(?:beach|shore|coast|damaged|destroyed|wreck)\b
+
+FALLBACK ROWS (only if no category row matches; the first matching row wins)
+hurricane      C AND \b(?:damaged|destroyed|broken|wrecked|debris|wreckage)\b
+earthquake     \b(?:damaged|destroyed|broken|wrecked)\b AND \b(?:building|house|wall|structure|apartment)\b
+landslide      \b(?:debris|rocks?|mud)\b AND \b(?:road|street|path|highway|tracks?)\b
+other_disaster (always)
+\end{lstlisting}
+
+Severity has no negation handling beyond the listed \texttt{no visible} and \texttt{no major} terms; any severe pattern takes precedence over the minor-damage pattern.
+
+\begin{lstlisting}[style=reviewprompt,breakatwhitespace=false]
+S1 = \b(?:widespread|extensive|massive|total\s+destruction|total\s+collapse|devastat\w*|engulf\w*|demolished|ravaged|reduced\s+to\s+rubble|levelled|leveled|flattened|
+     catastrophic|inferno|ablaze|deep\s+water|submerged|washed\s+out|blocked|blocking|cut\s+off|impassable|completely\s+(?:destroyed|collapsed|demolished|buried|covered|
+     submerged)|entirely\s+(?:destroyed|collapsed|demolished|buried)|totally\s+(?:destroyed|collapsed|demolished))\b
+S2 = \b(?:buildings|structures|houses|homes)\b AND \b(?:collaps\w*|destroyed|damaged|in\s+ruins)\b
+S3 = \b(?:building|structure|house|home|apartment|bridge|tower)\b
+     AND \b(?:collaps\w*|in\s+ruins|crumbled|caved\s+in|completely\s+destroyed|entirely\s+destroyed|reduced\s+to\s+rubble)\b
+L  = \b(?:minor|small|slight|superficial|limited|little|no\s+visible|no\s+major|intact|undamaged|mostly\s+intact|barely|minimal|negligible)\b
+severity = 2 if S1 or S2 or S3 matches; otherwise 0 if L matches; otherwise 1
+\end{lstlisting}
+
+\textit{Jetson.}
+No keyword inference is applied. Category and severity are read from the \texttt{cat:} and \texttt{sev:} lines of the primary response, and the countermeasure correction does not change them.
+
+\begin{lstlisting}[style=reviewprompt]
+lines = raw.splitlines(), each stripped of surrounding whitespace; empty lines dropped
+label = ^\s*(damage|countermeasure|cat|sev)\s*[:\uFF1A]\s*(.+)$
+        (case-insensitive; \uFF1A is the full-width colon)
+value = group 2, stripped, then leading/trailing '*' removed, then stripped
+defaults: cat = other_disaster, sev = 1
+For each line matching label, from top to bottom (later accepted lines overwrite):
+  cat: v = first whitespace-separated token of lowercase(value), with leading and trailing '.', ',', ':', ';' removed;
+       cat = v if v in {fire, flood, hurricane, landslide, earthquake, other_disaster}
+  sev: sev = first character of value that is 0, 1 or 2, if any
+Lines that do not match label, or values that are not accepted, leave cat and sev unchanged.
+\end{lstlisting}
+
+A \texttt{cat:} line whose value consists only of asterisks leaves no token and raises an error, so the image has no Jetson output; this did not occur among the recorded final-run failures.
+
