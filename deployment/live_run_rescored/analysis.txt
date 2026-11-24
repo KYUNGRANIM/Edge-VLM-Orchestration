@@ -1,0 +1,26 @@
+second run: [('gpt-4o-2024-08-06', 'fp_936db6157f'), ('gpt-4o-2024-08-06', 'fp_ce6605ba42'), ('gpt-4o-2024-08-06', 'fp_f89046aead')]
+
+=== 1,800 tier responses, first vs second scoring
+Q-Sat agreement 98.3% (30 changed: 15 pass->fail, 15 fail->pass), kappa 0.96
+text score: Spearman 0.966, mean |diff| 0.027, identical 66.3%
+  m5_a   mean text 0.716 -> 0.713, Q-Sat 52.3% -> 52.5%, changed 7
+  pi_a   mean text 0.669 -> 0.671, Q-Sat 64.3% -> 63.8%, changed 13
+  jetson mean text 0.809 -> 0.803, Q-Sat 76.0% -> 76.3%, changed 10
+criterion scores (0-5) identical 85.9%, within 1 point 99.6%
+
+=== Table I Q-Sat (%), first scoring -> second scoring (routes fixed; reference rebuilt)
+  Fixed@M5                52.3 ->  52.5  (7 images changed)
+  Fixed@Pi                64.3 ->  63.8  (13 images changed)
+  Fixed@Jetson            76.0 ->  76.3  (10 images changed)
+  Conf-Only (4,4)         68.5 ->  68.3  (9 images changed)
+  FrugalGPT cascade       75.0 ->  75.3  (10 images changed)
+  Primary-Only            65.3 ->  65.5  (11 images changed)
+  M5-Pi Cascade           62.8 ->  63.0  (11 images changed)
+  Ours                    66.2 ->  66.3  (9 images changed)
+  Reference               86.8 ->  86.3  (7 images changed)
+paired differences, second scoring (first scoring in brackets):
+  Ours - Fixed@Pi             +2.5 pp, McNemar p 0.235  [+1.8 pp, McNemar p 0.396]
+  Ours - Conf-Only (4,4)      -2.0 pp, McNemar p 0.372  [-2.3 pp, McNemar p 0.298]
+  Ours - Fixed@Jetson         -10.0 pp, McNemar p 0.000  [-9.8 pp, McNemar p 0.000]
+  Ours - Primary-Only         +0.8 pp, McNemar p 0.533  [+0.8 pp, McNemar p 0.533]
+  Ours - FrugalGPT cascade    -9.0 pp, McNemar p 0.000  [-8.8 pp, McNemar p 0.000]

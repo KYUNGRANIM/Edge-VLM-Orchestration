@@ -1,0 +1,73 @@
+{"t": 1793694882.5863695, "ts": "2026-11-03T17:34:42", "kind": "cycle", "done": 198, "idle_s": 2716, "ok": true, "dry_run": false}
+{"t": 1793695024.3734646, "ts": "2026-11-03T17:37:04", "kind": "recovered", "done": 199, "after_s": 154}
+{"t": 1793697929.286571, "ts": "2026-11-03T18:25:29", "kind": "cycle", "done": 270, "idle_s": 1508, "ok": true, "dry_run": false}
+{"t": 1793698050.2875915, "ts": "2026-11-03T18:27:30", "kind": "recovered", "done": 271, "after_s": 133}
+{"t": 1793705001.7598214, "ts": "2026-11-03T20:23:21", "kind": "cycle", "done": 476, "idle_s": 1634, "ok": true, "dry_run": false}
+{"t": 1793705302.256275, "ts": "2026-11-03T20:28:22", "kind": "cycle", "done": 476, "idle_s": 1935, "ok": true, "dry_run": false}
+{"t": 1793705467.9746537, "ts": "2026-11-03T20:31:07", "kind": "recovered", "done": 477, "after_s": 178}
+{"t": 1793708104.137119, "ts": "2026-11-03T21:15:04", "kind": "cycle", "done": 499, "idle_s": 1508, "ok": true, "dry_run": false}
+{"t": 1793708408.4422512, "ts": "2026-11-03T21:20:08", "kind": "cycle", "done": 499, "idle_s": 1811, "ok": true, "dry_run": false}
+{"t": 1793708712.7606456, "ts": "2026-11-03T21:25:12", "kind": "cycle", "done": 499, "idle_s": 2116, "ok": true, "dry_run": false}
+{"t": 1793709004.0440915, "ts": "2026-11-03T21:30:04", "kind": "give_up_pause", "done": 499}
+{"t": 1793709505.778367, "ts": "2026-11-03T21:38:25", "kind": "recovered", "done": 500, "after_s": 806}
+{"t": 1793711282.646083, "ts": "2026-11-03T22:08:02", "kind": "cycle", "done": 504, "idle_s": 1503, "ok": true, "dry_run": false}
+{"t": 1793711586.9026272, "ts": "2026-11-03T22:13:06", "kind": "cycle", "done": 504, "idle_s": 1807, "ok": true, "dry_run": false}
+{"t": 1793711889.7253358, "ts": "2026-11-03T22:18:09", "kind": "cycle", "done": 504, "idle_s": 2110, "ok": true, "dry_run": false}
+{"t": 1793712178.9852374, "ts": "2026-11-03T22:22:58", "kind": "give_up_pause", "done": 504}
+{"t": 1793712654.5204372, "ts": "2026-11-03T22:30:54", "kind": "recovered", "done": 505, "after_s": 777}
+{"t": 1793714464.5931118, "ts": "2026-11-03T23:01:04", "kind": "cycle", "done": 509, "idle_s": 1512, "ok": true, "dry_run": false}
+{"t": 1793714769.51348, "ts": "2026-11-03T23:06:09", "kind": "cycle", "done": 509, "idle_s": 1816, "ok": true, "dry_run": false}
+{"t": 1793715073.9722886, "ts": "2026-11-03T23:11:13", "kind": "cycle", "done": 509, "idle_s": 2121, "ok": true, "dry_run": false}
+{"t": 1793715366.7427423, "ts": "2026-11-03T23:16:06", "kind": "give_up_pause", "done": 509}
+{"t": 1793715638.481248, "ts": "2026-11-03T23:20:38", "kind": "recovered", "done": 510, "after_s": 577}
+{"t": 1793726625.2592986, "ts": "2026-11-04T02:23:45", "kind": "cycle", "done": 580, "idle_s": 1500, "ok": true, "dry_run": false}
+{"t": 1793726937.7580497, "ts": "2026-11-04T02:28:57", "kind": "cycle", "done": 580, "idle_s": 1813, "ok": true, "dry_run": false}
+{"t": 1793727250.5529137, "ts": "2026-11-04T02:34:10", "kind": "cycle", "done": 580, "idle_s": 2126, "ok": true, "dry_run": false}
+{"t": 1793727548.44187, "ts": "2026-11-04T02:39:08", "kind": "give_up_pause", "done": 580}
+{"t": 1793729363.6390395, "ts": "2026-11-04T03:09:23", "kind": "cycle", "done": 580, "idle_s": 4239, "ok": true, "dry_run": false}
+{"t": 1793729534.8518615, "ts": "2026-11-04T03:12:14", "kind": "recovered", "done": 581, "after_s": 184}
+{"t": 1793732119.0365863, "ts": "2026-11-04T03:55:19", "kind": "cycle", "done": 584, "idle_s": 1508, "ok": true, "dry_run": false}
+{"t": 1793732430.588304, "ts": "2026-11-04T04:00:30", "kind": "cycle", "done": 584, "idle_s": 1820, "ok": true, "dry_run": false}
+{"t": 1793732741.696325, "ts": "2026-11-04T04:05:41", "kind": "cycle", "done": 584, "idle_s": 2131, "ok": true, "dry_run": false}
+{"t": 1793733036.9120276, "ts": "2026-11-04T04:10:36", "kind": "give_up_pause", "done": 584}
+{"t": 1793733186.948929, "ts": "2026-11-04T04:13:06", "kind": "recovered", "done": 585, "after_s": 459}
+{"t": 1793735327.5407073, "ts": "2026-11-04T04:48:47", "kind": "cycle", "done": 590, "idle_s": 1519, "ok": true, "dry_run": false}
+{"t": 1793735636.1053543, "ts": "2026-11-04T04:53:56", "kind": "cycle", "done": 590, "idle_s": 1828, "ok": true, "dry_run": false}
+{"t": 1793735946.9897702, "ts": "2026-11-04T04:59:06", "kind": "cycle", "done": 590, "idle_s": 2138, "ok": true, "dry_run": false}
+{"t": 1793736241.4600983, "ts": "2026-11-04T05:04:01", "kind": "give_up_pause", "done": 590}
+{"t": 1793738074.8194075, "ts": "2026-11-04T05:34:34", "kind": "cycle", "done": 590, "idle_s": 4267, "ok": true, "dry_run": false}
+{"t": 1793738382.731519, "ts": "2026-11-04T05:39:42", "kind": "cycle", "done": 590, "idle_s": 4575, "ok": true, "dry_run": false}
+{"t": 1793738676.264956, "ts": "2026-11-04T05:44:36", "kind": "give_up_pause", "done": 590}
+{"t": 1793740503.1202378, "ts": "2026-11-04T06:15:03", "kind": "cycle", "done": 590, "idle_s": 6694, "ok": true, "dry_run": false}
+{"t": 1793740819.8133817, "ts": "2026-11-04T06:20:19", "kind": "cycle", "done": 590, "idle_s": 7010, "ok": true, "dry_run": false}
+{"t": 1793741122.4530323, "ts": "2026-11-04T06:25:22", "kind": "give_up_pause", "done": 590}
+{"t": 1793742944.9327564, "ts": "2026-11-04T06:55:44", "kind": "cycle", "done": 590, "idle_s": 9135, "ok": true, "dry_run": false}
+{"t": 1793743265.33106, "ts": "2026-11-04T07:01:05", "kind": "cycle", "done": 590, "idle_s": 9454, "ok": true, "dry_run": false}
+{"t": 1793743555.4378977, "ts": "2026-11-04T07:05:55", "kind": "give_up_pause", "done": 590}
+{"t": 1793745375.3141742, "ts": "2026-11-04T07:36:15", "kind": "cycle", "done": 590, "idle_s": 11567, "ok": true, "dry_run": false}
+{"t": 1793745686.8522124, "ts": "2026-11-04T07:41:26", "kind": "cycle", "done": 590, "idle_s": 11876, "ok": true, "dry_run": false}
+{"t": 1793745981.9414992, "ts": "2026-11-04T07:46:21", "kind": "give_up_pause", "done": 590}
+{"t": 1793747800.367801, "ts": "2026-11-04T08:16:40", "kind": "cycle", "done": 590, "idle_s": 13992, "ok": true, "dry_run": false}
+{"t": 1793748109.8974516, "ts": "2026-11-04T08:21:49", "kind": "cycle", "done": 590, "idle_s": 14301, "ok": true, "dry_run": false}
+{"t": 1793748405.4517171, "ts": "2026-11-04T08:26:45", "kind": "give_up_pause", "done": 590}
+{"t": 1793750239.9022393, "ts": "2026-11-04T08:57:19", "kind": "cycle", "done": 590, "idle_s": 16431, "ok": true, "dry_run": false}
+{"t": 1793750551.4243577, "ts": "2026-11-04T09:02:31", "kind": "cycle", "done": 590, "idle_s": 16742, "ok": true, "dry_run": false}
+{"t": 1793750846.5723283, "ts": "2026-11-04T09:07:26", "kind": "give_up_pause", "done": 590}
+{"t": 1793752664.9067876, "ts": "2026-11-04T09:37:44", "kind": "cycle", "done": 590, "idle_s": 18856, "ok": true, "dry_run": false}
+{"t": 1793752976.688295, "ts": "2026-11-04T09:42:56", "kind": "cycle", "done": 590, "idle_s": 19168, "ok": true, "dry_run": false}
+{"t": 1793753271.8145726, "ts": "2026-11-04T09:47:51", "kind": "give_up_pause", "done": 590}
+{"t": 1793755085.9319112, "ts": "2026-11-04T10:18:05", "kind": "cycle", "done": 590, "idle_s": 21277, "ok": true, "dry_run": false}
+{"t": 1793755396.0557132, "ts": "2026-11-04T10:23:16", "kind": "cycle", "done": 590, "idle_s": 21588, "ok": true, "dry_run": false}
+{"t": 1793755690.2839577, "ts": "2026-11-04T10:28:10", "kind": "give_up_pause", "done": 590}
+{"t": 1793757506.2798135, "ts": "2026-11-04T10:58:26", "kind": "cycle", "done": 590, "idle_s": 23698, "ok": true, "dry_run": false}
+{"t": 1793757814.193945, "ts": "2026-11-04T11:03:34", "kind": "cycle", "done": 590, "idle_s": 24006, "ok": true, "dry_run": false}
+{"t": 1793758110.5936074, "ts": "2026-11-04T11:08:30", "kind": "give_up_pause", "done": 590}
+{"t": 1793759925.5151665, "ts": "2026-11-04T11:38:45", "kind": "cycle", "done": 590, "idle_s": 26117, "ok": true, "dry_run": false}
+{"t": 1793760232.3601294, "ts": "2026-11-04T11:43:52", "kind": "cycle", "done": 590, "idle_s": 26424, "ok": true, "dry_run": false}
+{"t": 1793760527.0549848, "ts": "2026-11-04T11:48:47", "kind": "give_up_pause", "done": 590}
+{"t": 1793762357.2132206, "ts": "2026-11-04T12:19:17", "kind": "cycle", "done": 590, "idle_s": 28549, "ok": true, "dry_run": false}
+{"t": 1793762665.7870977, "ts": "2026-11-04T12:24:25", "kind": "cycle", "done": 590, "idle_s": 28857, "ok": true, "dry_run": false}
+{"t": 1793762958.5079231, "ts": "2026-11-04T12:29:18", "kind": "give_up_pause", "done": 590}
+{"t": 1793764790.6347988, "ts": "2026-11-04T12:59:50", "kind": "cycle", "done": 590, "idle_s": 30982, "ok": true, "dry_run": false}
+{"t": 1793765098.75473, "ts": "2026-11-04T13:04:58", "kind": "cycle", "done": 590, "idle_s": 31290, "ok": true, "dry_run": false}
+{"t": 1793765392.480468, "ts": "2026-11-04T13:09:52", "kind": "give_up_pause", "done": 590}
