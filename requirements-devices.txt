@@ -1,0 +1,18 @@
+# Only needed on the Raspberry Pi / Jetson devices that host the inference
+# servers in online/code/servers/ and runtime_policy/code/device_servers/.
+#
+# A machine that only reproduces the analysis does not need any of this.
+#
+#     pip install -r requirements.txt -r requirements-devices.txt
+#
+# The VLM runtimes themselves are not listed here: Tier 2 and Tier 3 load their
+# models through the vendor stacks installed on those boards (llama.cpp-based
+# server on the Pi, JetPack/PyTorch on the Jetson), which are platform-specific
+# and installed outside pip.
+
+fastapi==0.135.1
+uvicorn==0.41.0
+starlette==0.52.1
+pydantic==2.8.2
+requests==2.32.3
+pillow==12.0.0

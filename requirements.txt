@@ -1,0 +1,20 @@
+# Reproduce the article: labels and routers (offline/code/pipeline 01-05, policy export) and the analysis scripts
+# (review_medic/runtime/pipeline and the other scripts listed in README.md).
+#
+#     python3.12 -m venv .venv && source .venv/bin/activate
+#     pip install -r requirements.txt
+#
+# These are the versions the results were produced and verified with (Python 3.12).
+# scikit-learn is pinned exactly because the exported decision trees are compared byte-for-byte against the deployed
+# routers; a different version can change the pickled representation even when the learned tree is identical.
+#
+# Two optional sets live in separate files:
+#   requirements-judge.txt    to re-run the paid GPT-4o judge (step 00)
+#   requirements-devices.txt  to run the Pi / Jetson servers
+
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.5.1
+scipy==1.13.1
+matplotlib==3.9.2
+joblib==1.4.2
