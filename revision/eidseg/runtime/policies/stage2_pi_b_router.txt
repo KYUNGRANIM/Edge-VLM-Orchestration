@@ -1,0 +1,46 @@
+|--- cat__pib_cat_earthquake <= 0.5000
+|   |--- num__pib_sev <= -0.1588
+|   |   |--- num__pib_min_logprob <= -0.5615
+|   |   |   |--- num__m5_conf_mean <= 0.7573
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_mean >  0.7573
+|   |   |   |   |--- class: 1
+|   |   |--- num__pib_min_logprob >  -0.5615
+|   |   |   |--- num__m5_sev_agree <= 0.7072
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_sev_agree >  0.7072
+|   |   |   |   |--- class: 0
+|   |--- num__pib_sev >  -0.1588
+|   |   |--- num__m5_conf_mean <= -0.1607
+|   |   |   |--- cat__m5a_cat_earthquake <= 0.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__m5a_cat_earthquake >  0.5000
+|   |   |   |   |--- class: 0
+|   |   |--- num__m5_conf_mean >  -0.1607
+|   |   |   |--- num__m5_sev_range <= -0.9269
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_sev_range >  -0.9269
+|   |   |   |   |--- class: 1
+|--- cat__pib_cat_earthquake >  0.5000
+|   |--- num__pib_min_logprob <= -0.8096
+|   |   |--- num__pib_sev <= -0.1588
+|   |   |   |--- num__m5_conf_mean <= -0.1607
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_conf_mean >  -0.1607
+|   |   |   |   |--- class: 0
+|   |   |--- num__pib_sev >  -0.1588
+|   |   |   |--- num__m5_conf_mean <= 1.2163
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_conf_mean >  1.2163
+|   |   |   |   |--- class: 1
+|   |--- num__pib_min_logprob >  -0.8096
+|   |   |--- num__m5_conf_mean <= -1.0786
+|   |   |   |--- num__pib_sev <= -0.1588
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pib_sev >  -0.1588
+|   |   |   |   |--- class: 1
+|   |   |--- num__m5_conf_mean >  -1.0786
+|   |   |   |--- num__pib_min_logprob <= 0.4432
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pib_min_logprob >  0.4432
+|   |   |   |   |--- class: 1

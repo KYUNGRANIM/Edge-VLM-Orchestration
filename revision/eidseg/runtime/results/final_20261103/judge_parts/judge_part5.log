@@ -1,0 +1,221 @@
+[CONFIG]
+  collection : review_eidseg/runtime/results/final_20261103/judge_parts/input_part5.jsonl
+  image_root : /Users/kyungran/EIDSeg_eval/images_sampled
+  output     : review_eidseg/runtime/results/final_20261103/judge_parts/judge_part5.jsonl
+  model      : gpt-4o
+  detail     : high
+  records    : 100 selected
+  skipped    : {'missing_image': 0, 'already_done': 0}
+[ESTIMATE]
+{
+  "records": 100,
+  "input_tokens_est": 206584.0,
+  "output_tokens_est_max": 90000.0,
+  "input_cost_est": 0.5165,
+  "output_cost_est_max": 0.9,
+  "total_cost_est_max": 1.4165
+}
+[1/100] 000011__98c84e2a55.jpg
+  ok best=pi_a scores={'m5_a': 0.77, 'pi_a': 1.0, 'jetson': 0.73} latency=6501ms
+[2/100] 000012__aec832061d.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.1} latency=2922ms
+[3/100] 000022__10b4913a42.jpg
+  ok best=jetson scores={'m5_a': 0.8, 'pi_a': 0.31, 'jetson': 1.0} latency=3717ms
+[4/100] 000025__fad5f1b450.jpg
+  ok best=m5_a scores={'m5_a': 0.76, 'pi_a': 0.2, 'jetson': 0.5} latency=5447ms
+[5/100] 000034__99d293d175.jpg
+  ok best=jetson scores={'m5_a': 0.88, 'pi_a': 0.91, 'jetson': 1.0} latency=4397ms
+[6/100] 000038__5958ad6791.jpg
+  ok best=jetson scores={'m5_a': 0.58, 'pi_a': 1.0, 'jetson': 1.0} latency=4709ms
+[7/100] 000047__863bdebfe5.jpg
+  ok best=jetson scores={'m5_a': 0.86, 'pi_a': 0.88, 'jetson': 0.91} latency=4737ms
+[8/100] 000049__62c984eee3.jpg
+  ok best=pi_a scores={'m5_a': 0.91, 'pi_a': 1.0, 'jetson': 0.91} latency=4985ms
+[9/100] 000052__52fbf614d8.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 1.0, 'jetson': 1.0} latency=3369ms
+[10/100] 000058__a8ea660027.jpg
+  ok best=pi_a scores={'m5_a': 0.58, 'pi_a': 1.0, 'jetson': 0.98} latency=5764ms
+[11/100] 000069__899affa355.jpg
+  ok best=m5_a scores={'m5_a': 0.7, 'pi_a': 0.38, 'jetson': 0.64} latency=3926ms
+[12/100] 000074__613545eb2f.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.6, 'jetson': 0.6} latency=4112ms
+[13/100] 000080__9554c097c8.jpg
+  ok best=m5_a scores={'m5_a': 0.1, 'pi_a': 0.0, 'jetson': 0.0} latency=3712ms
+[14/100] 000086__222a57dc76.jpg
+  ok best=jetson scores={'m5_a': 0.06, 'pi_a': 0.06, 'jetson': 0.67} latency=2619ms
+[15/100] 000091__835750c86d.jpg
+  ok best=jetson scores={'m5_a': 0.72, 'pi_a': 0.91, 'jetson': 1.0} latency=3660ms
+[16/100] 000100__c24c93afcd.jpg
+  ok best=jetson scores={'m5_a': 0.73, 'pi_a': 0.82, 'jetson': 1.0} latency=3206ms
+[17/100] 000105__5df3096df5.jpg
+  ok best=jetson scores={'m5_a': 0.6, 'pi_a': 0.8, 'jetson': 0.91} latency=3916ms
+[18/100] 000110__bbea759a01.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.6, 'jetson': 1.0} latency=3410ms
+[19/100] 000120__b87959e726.jpg
+  ok best=pi_a scores={'m5_a': 0.91, 'pi_a': 1.0, 'jetson': 0.64} latency=2418ms
+[20/100] 000123__d4cc5b2c40.jpg
+  ok best=pi_a scores={'m5_a': 0.78, 'pi_a': 1.0, 'jetson': 0.68} latency=3189ms
+[21/100] 000127__003b51c543.jpg
+  ok best=jetson scores={'m5_a': 0.58, 'pi_a': 0.0, 'jetson': 0.91} latency=3622ms
+[22/100] 000132__42d4dd122f.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.64, 'jetson': 0.91} latency=3492ms
+[23/100] 000138__fc8f008b9e.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 1.0} latency=3056ms
+[24/100] 000140__a4ff53bd2d.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.8, 'jetson': 0.4} latency=2115ms
+[25/100] 000148__70eb7dc99f.jpg
+  ok best=jetson scores={'m5_a': 1.0, 'pi_a': 0.88, 'jetson': 1.0} latency=2830ms
+[26/100] 000157__4962a28389.jpg
+  ok best=pi_a scores={'m5_a': 0.6, 'pi_a': 0.8, 'jetson': 0.68} latency=3034ms
+[27/100] 000164__14678a88e7.jpg
+  ok best=m5_a scores={'m5_a': 0.8, 'pi_a': 0.52, 'jetson': 0.4} latency=3618ms
+[28/100] 000172__ad3bdcb892.jpg
+  ok best=jetson scores={'m5_a': 0.91, 'pi_a': 0.91, 'jetson': 1.0} latency=2955ms
+[29/100] 000174__11fe672435.jpg
+  ok best=pi_a scores={'m5_a': 1.0, 'pi_a': 1.0, 'jetson': 1.0} latency=2753ms
+[30/100] 000181__14476adac6.jpg
+  ok best=jetson scores={'m5_a': 0.52, 'pi_a': 0.8, 'jetson': 0.9} latency=3001ms
+[31/100] 000183__e327871aed.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.84, 'jetson': 0.67} latency=3213ms
+[32/100] 000189__ce86ef01ef.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.7, 'jetson': 0.82} latency=4149ms
+[33/100] 000193__3796ac4162.jpg
+  ok best=jetson scores={'m5_a': 0.8, 'pi_a': 0.22, 'jetson': 1.0} latency=4156ms
+[34/100] 000196__abc3a1579e.jpg
+  ok best=m5_a scores={'m5_a': 0.8, 'pi_a': 0.58, 'jetson': 0.6} latency=3337ms
+[35/100] 000199__cef3a00c4e.jpg
+  ok best=m5_a scores={'m5_a': 0.91, 'pi_a': 0.55, 'jetson': 0.79} latency=3347ms
+[36/100] 000206__0d82fc7696.jpg
+  ok best=pi_a scores={'m5_a': 0.66, 'pi_a': 0.98, 'jetson': 0.8} latency=4114ms
+[37/100] 000210__c61cee9cf3.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.28} latency=3489ms
+[38/100] 000219__bad9dae191.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.91} latency=3262ms
+[39/100] 000232__016051f829.jpg
+  ok best=jetson scores={'m5_a': 1.0, 'pi_a': 0.92, 'jetson': 1.0} latency=2646ms
+[40/100] 000237__5d0477534e.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.77, 'jetson': 0.91} latency=2444ms
+[41/100] 000240__ff5978f8fe.jpg
+  ok best=jetson scores={'m5_a': 0.2, 'pi_a': 0.52, 'jetson': 0.91} latency=3301ms
+[42/100] 000250__92c68d0fec.jpg
+  ok best=pi_a scores={'m5_a': 0.88, 'pi_a': 1.0, 'jetson': 0.79} latency=4158ms
+[43/100] 000252__d54297b61f.jpg
+  ok best=pi_a scores={'m5_a': 0.91, 'pi_a': 1.0, 'jetson': 1.0} latency=3287ms
+[44/100] 000259__35ba96f941.jpg
+  ok best=m5_a scores={'m5_a': 0.46, 'pi_a': 0.1, 'jetson': 0.0} latency=3547ms
+[45/100] 000266__8edc32aef8.jpg
+  ok best=jetson scores={'m5_a': 0.04, 'pi_a': 0.0, 'jetson': 0.4} latency=4241ms
+[46/100] 000272__b865f93e74.jpg
+  ok best=pi_a scores={'m5_a': 0.94, 'pi_a': 1.0, 'jetson': 0.88} latency=3693ms
+[47/100] 000282__cd6a369571.jpg
+  ok best=jetson scores={'m5_a': 0.72, 'pi_a': 0.94, 'jetson': 0.98} latency=2986ms
+[48/100] 000290__41479557ef.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.78, 'jetson': 0.91} latency=4181ms
+[49/100] 000294__f47fbd312c.jpg
+  ok best=m5_a scores={'m5_a': 0.91, 'pi_a': 0.58, 'jetson': 0.84} latency=3345ms
+[50/100] 000297__85577835b8.jpg
+  ok best=pi_a scores={'m5_a': 0.91, 'pi_a': 1.0, 'jetson': 1.0} latency=3520ms
+[51/100] 000302__a7e91edad0.jpg
+  ok best=jetson scores={'m5_a': 0.96, 'pi_a': 0.98, 'jetson': 0.98} latency=4570ms
+[52/100] 000311__6cc91597e3.jpg
+  ok best=jetson scores={'m5_a': 0.3, 'pi_a': 0.64, 'jetson': 0.76} latency=2344ms
+[53/100] 000312__9247f6151d.jpg
+  ok best=jetson scores={'m5_a': 1.0, 'pi_a': 1.0, 'jetson': 1.0} latency=3467ms
+[54/100] 000322__93c5afd6ce.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.88, 'jetson': 0.58} latency=3388ms
+[55/100] 000328__494f123574.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.28, 'jetson': 0.64} latency=3650ms
+[56/100] 000333__76f93cdff2.jpg
+  ok best=m5_a scores={'m5_a': 0.88, 'pi_a': 0.68, 'jetson': 0.68} latency=3929ms
+[57/100] 000336__4630fd917b.jpg
+  ok best=jetson scores={'m5_a': 0.76, 'pi_a': 0.72, 'jetson': 1.0} latency=4150ms
+[58/100] 000337__9f7ecbe773.jpg
+  ok best=pi_a scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.0} latency=3049ms
+[59/100] 000343__c4546dea42.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.8, 'jetson': 0.46} latency=3069ms
+[60/100] 000353__13a2a494f6.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 1.0, 'jetson': 0.88} latency=5085ms
+[61/100] 000359__205d4b1673.jpg
+  ok best=pi_a scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.0} latency=4485ms
+[62/100] 000366__2503fef52b.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.82} latency=2276ms
+[63/100] 000369__65ab42557f.jpg
+  ok best=jetson scores={'m5_a': 0.76, 'pi_a': 0.6, 'jetson': 1.0} latency=2924ms
+[64/100] 000377__57f66c3401.jpg
+  ok best=pi_a scores={'m5_a': 0.0, 'pi_a': 1.0, 'jetson': 0.98} latency=2363ms
+[65/100] 000383__f5083b5680.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.64} latency=2351ms
+[66/100] 000394__1cfb281641.jpg
+  ok best=m5_a scores={'m5_a': 0.32, 'pi_a': 0.0, 'jetson': 0.0} latency=2853ms
+[67/100] 000401__1636a8d0bc.jpg
+  ok best=jetson scores={'m5_a': 0.7, 'pi_a': 0.56, 'jetson': 0.86} latency=3103ms
+[68/100] 000403__7e4f25d7eb.jpg
+  ok best=jetson scores={'m5_a': 0.96, 'pi_a': 0.6, 'jetson': 0.96} latency=3777ms
+[69/100] 000408__9af1e9ac4b.jpg
+  ok best=pi_a scores={'m5_a': 0.58, 'pi_a': 0.8, 'jetson': 0.58} latency=5479ms
+[70/100] 000418__d7a162bc3f.jpg
+  ok best=pi_a scores={'m5_a': 0.82, 'pi_a': 1.0, 'jetson': 0.82} latency=3134ms
+[71/100] 000423__d63aedf5fe.jpg
+  ok best=pi_a scores={'m5_a': 0.46, 'pi_a': 0.91, 'jetson': 0.91} latency=3626ms
+[72/100] 000426__607bb4abdc.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.76} latency=2681ms
+[73/100] 000433__84d01e6f66.jpg
+  ok best=jetson scores={'m5_a': 0.1, 'pi_a': 0.22, 'jetson': 0.91} latency=3653ms
+[74/100] 000441__dca3f9a365.jpg
+  ok best=jetson scores={'m5_a': 0.29, 'pi_a': 0.31, 'jetson': 0.8} latency=4486ms
+[75/100] 000445__5037359c3f.jpg
+  ok best=m5_a scores={'m5_a': 0.88, 'pi_a': 0.58, 'jetson': 0.91} latency=3755ms
+[76/100] 000449__003a0e79f2.jpg
+  ok best=pi_a scores={'m5_a': 0.1, 'pi_a': 1.0, 'jetson': 1.0} latency=3447ms
+[77/100] 000455__51dcc67ec0.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.88, 'jetson': 0.58} latency=4193ms
+[78/100] 000462__91b56a5ee2.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.78, 'jetson': 0.98} latency=3094ms
+[79/100] 000467__708b6a9637.jpg
+  ok best=jetson scores={'m5_a': 0.73, 'pi_a': 1.0, 'jetson': 1.0} latency=2624ms
+[80/100] 000473__93b58ea15e.jpg
+  ok best=jetson scores={'m5_a': 0.6, 'pi_a': 0.8, 'jetson': 1.0} latency=3757ms
+[81/100] 000486__f0057df27c.jpg
+  ok best=pi_a scores={'m5_a': 1.0, 'pi_a': 1.0, 'jetson': 0.98} latency=3489ms
+[82/100] 000493__7b48cd3df9.jpg
+  ok best=jetson scores={'m5_a': 0.13, 'pi_a': 0.0, 'jetson': 0.91} latency=3332ms
+[83/100] 000499__c97eecfb47.jpg
+  ok best=jetson scores={'m5_a': 0.58, 'pi_a': 0.0, 'jetson': 1.0} latency=3838ms
+[84/100] 000503__678841497c.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.82} latency=3182ms
+[85/100] 000508__2694f3a09a.jpg
+  ok best=m5_a scores={'m5_a': 0.88, 'pi_a': 0.8, 'jetson': 0.7} latency=3602ms
+[86/100] 000513__6dd0e18741.jpg
+  ok best=pi_a scores={'m5_a': 0.31, 'pi_a': 1.0, 'jetson': 0.78} latency=3992ms
+[87/100] 000515__abd04caa08.jpg
+  ok best=jetson scores={'m5_a': 0.58, 'pi_a': 0.82, 'jetson': 1.0} latency=2392ms
+[88/100] 000520__ff82cb7694.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.42, 'jetson': 0.64} latency=4770ms
+[89/100] 000526__7de6ff3f44.jpg
+  ok best=jetson scores={'m5_a': 0.88, 'pi_a': 1.0, 'jetson': 1.0} latency=4884ms
+[90/100] 000532__ca8eaa9e2f.jpg
+  ok best=pi_a scores={'m5_a': 0.82, 'pi_a': 1.0, 'jetson': 0.98} latency=3306ms
+[91/100] 000546__9c6809989b.jpg
+  ok best=m5_a scores={'m5_a': 1.0, 'pi_a': 0.57, 'jetson': 0.8} latency=3621ms
+[92/100] 000547__7edbf3836c.jpg
+  ok best=pi_a scores={'m5_a': 0.52, 'pi_a': 0.76, 'jetson': 0.54} latency=3490ms
+[93/100] 000551__2bf6e6c3a2.jpg
+  ok best=jetson scores={'m5_a': 0.2, 'pi_a': 0.0, 'jetson': 0.91} latency=3907ms
+[94/100] 000554__9f54ff22b6.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.91} latency=3349ms
+[95/100] 000564__65265adcd6.jpg
+  ok best=m5_a scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.0} latency=3332ms
+[96/100] 000571__6ac288f467.jpg
+  ok best=m5_a scores={'m5_a': 0.4, 'pi_a': 0.0, 'jetson': 0.28} latency=4298ms
+[97/100] 000581__6bd7c80936.jpg
+  ok best=jetson scores={'m5_a': 0.96, 'pi_a': 0.76, 'jetson': 0.98} latency=3118ms
+[98/100] 000585__d134782919.jpg
+  ok best=jetson scores={'m5_a': 0.64, 'pi_a': 1.0, 'jetson': 1.0} latency=3720ms
+[99/100] 000590__4fd2f39bea.jpg
+  ok best=jetson scores={'m5_a': 0.0, 'pi_a': 0.0, 'jetson': 0.52} latency=8857ms
+[100/100] 000595__e5c7a9f2dd.jpg
+  ok best=jetson scores={'m5_a': 0.4, 'pi_a': 0.0, 'jetson': 0.91} latency=4958ms
+[DONE]
+  ok   : 100
+  fail : 0
+  out  : review_eidseg/runtime/results/final_20261103/judge_parts/judge_part5.jsonl

@@ -1,0 +1,2026 @@
+nohup: ignoring input
+/home/pi/Project/edge_vlm_pi/pi_tier2/pi_b_router_server.py:384: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [819395]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[PI_B-ONLINE] save_dir=tier2_eidseg_runtime_b
+[PI_B-ONLINE] merged=tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+[PI_B-ONLINE] out=tier2_eidseg_runtime_b/online_pi_b_results.jsonl
+[PI_B-ONLINE] pi_a_url=http://192.168.0.60:8000/ingest_pi_b_result
+[PI_B-ONLINE] decode temperature=0.2 seed=42 no_top_k_top_p=1
+INFO:     192.168.0.203:51483 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000002__abb64c3d02.jpg merged=False
+INFO:     192.168.0.240:52381 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000002__abb64c3d02.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52382 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 1] 000002__abb64c3d02.jpg
+[M5-IN] 000003__1cb01d58d2.jpg merged=False
+INFO:     192.168.0.240:52385 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000003__1cb01d58d2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52386 - "POST /patch_e2e HTTP/1.1" 200 OK
+INFO:     192.168.0.203:51547 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000005__04c8c50210.jpg merged=False
+INFO:     192.168.0.240:52390 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000005__04c8c50210.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52391 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 2] 000003__1cb01d58d2.jpg
+[M5-IN] 000006__fdcf2a389a.jpg merged=False
+INFO:     192.168.0.240:52394 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000006__fdcf2a389a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52395 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000007__32d056e448.jpg merged=False
+INFO:     192.168.0.240:52398 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000007__32d056e448.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52399 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 3] 000005__04c8c50210.jpg
+[M5-IN] 000008__f7db79b241.jpg merged=False
+INFO:     192.168.0.240:52402 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000008__f7db79b241.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52403 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 4] 000006__fdcf2a389a.jpg
+[M5-IN] 000009__4290030c1a.jpg merged=False
+INFO:     192.168.0.240:52406 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000009__4290030c1a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52407 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 5] 000007__32d056e448.jpg
+[M5-IN] 000012__aec832061d.jpg merged=False
+INFO:     192.168.0.240:52412 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000012__aec832061d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52413 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 6] 000008__f7db79b241.jpg
+[M5-IN] 000013__2e86aeeaf7.jpg merged=False
+INFO:     192.168.0.240:52416 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000013__2e86aeeaf7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52417 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 7] 000009__4290030c1a.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 8] 000012__aec832061d.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=3
+[PI_B 9] 000013__2e86aeeaf7.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000018__d2243bc033.jpg merged=False
+INFO:     192.168.0.240:53484 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000018__d2243bc033.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:53485 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 10] 000018__d2243bc033.jpg
+[M5-IN] 000019__aef2d2c726.jpg merged=False
+INFO:     192.168.0.240:53488 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000019__aef2d2c726.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:53489 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 11] 000019__aef2d2c726.jpg
+[M5-IN] 000020__6080857756.jpg merged=False
+INFO:     192.168.0.240:53492 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000020__6080857756.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:53493 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 12] 000020__6080857756.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000023__ec1741871f.jpg merged=False
+INFO:     192.168.0.240:53498 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000023__ec1741871f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:53499 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 13] 000023__ec1741871f.jpg
+[M5-IN] 000024__71cbc90b7d.jpg merged=False
+INFO:     192.168.0.240:53502 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000024__71cbc90b7d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:53503 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 14] 000024__71cbc90b7d.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+INFO:     192.168.0.203:51668 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000036__3261578ba5.jpg merged=False
+INFO:     192.168.0.240:51888 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000036__3261578ba5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51889 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 15] 000036__3261578ba5.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000039__65d83f6222.jpg merged=False
+INFO:     192.168.0.240:51894 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000039__65d83f6222.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51895 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 16] 000039__65d83f6222.jpg
+[M5-IN] 000040__9998a75fb8.jpg merged=False
+INFO:     192.168.0.240:51898 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000040__9998a75fb8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51899 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 17] 000040__9998a75fb8.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000042__3041ee7385.jpg merged=False
+INFO:     192.168.0.240:51903 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000042__3041ee7385.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51904 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 18] 000042__3041ee7385.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000044__4061d2f1af.jpg merged=False
+INFO:     192.168.0.240:51908 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000044__4061d2f1af.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51909 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 19] 000044__4061d2f1af.jpg
+[M5-IN] 000045__9d7731d4ab.jpg merged=False
+INFO:     192.168.0.240:51912 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000045__9d7731d4ab.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51913 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 20] 000045__9d7731d4ab.jpg
+[M5-IN] 000046__8f70fa1114.jpg merged=False
+INFO:     192.168.0.240:51916 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000046__8f70fa1114.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51917 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+  [RELOAD] model reloaded
+[PI_B 21] 000046__8f70fa1114.jpg
+[M5-IN] 000049__62c984eee3.jpg merged=False
+INFO:     192.168.0.240:51922 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000049__62c984eee3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51923 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 22] 000049__62c984eee3.jpg
+[M5-IN] 000050__5685d42177.jpg merged=False
+INFO:     192.168.0.240:51926 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000050__5685d42177.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51927 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=5
+[PI_B 23] 000050__5685d42177.jpg
+[M5-IN] 000051__bea2ee3d77.jpg merged=False
+INFO:     192.168.0.240:51930 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000051__bea2ee3d77.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51931 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000052__52fbf614d8.jpg merged=False
+INFO:     192.168.0.240:51934 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000052__52fbf614d8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51935 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[PI_B 24] 000051__bea2ee3d77.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 25] 000052__52fbf614d8.jpg
+[M5-IN] 000054__bf42697dec.jpg merged=False
+INFO:     192.168.0.240:51939 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000054__bf42697dec.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51940 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=5
+[PI_B 26] 000054__bf42697dec.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000057__1414c05409.jpg merged=False
+INFO:     192.168.0.240:51945 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000057__1414c05409.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51946 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 27] 000057__1414c05409.jpg
+[M5-IN] 000058__a8ea660027.jpg merged=False
+INFO:     192.168.0.240:51949 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000058__a8ea660027.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51950 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 28] 000058__a8ea660027.jpg
+[M5-IN] 000059__810a87c316.jpg merged=False
+INFO:     192.168.0.240:51953 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000059__810a87c316.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51954 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 29] 000059__810a87c316.jpg
+         sent -> Pi_A | cat=hurricane sev=2 conf=2
+[M5-IN] 000062__ad905f24e1.jpg merged=False
+INFO:     192.168.0.240:51959 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000062__ad905f24e1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51960 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 30] 000062__ad905f24e1.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000064__77574243c1.jpg merged=False
+INFO:     192.168.0.240:51964 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000064__77574243c1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51965 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 31] 000064__77574243c1.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+INFO:     192.168.0.203:51978 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000163__5745900117.jpg merged=False
+INFO:     192.168.0.240:61320 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000163__5745900117.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61321 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 32] 000163__5745900117.jpg
+[M5-IN] 000164__14678a88e7.jpg merged=False
+INFO:     192.168.0.240:61324 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000164__14678a88e7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61325 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 33] 000164__14678a88e7.jpg
+[M5-IN] 000165__d10068e3be.jpg merged=False
+INFO:     192.168.0.240:61328 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000165__d10068e3be.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61329 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 34] 000165__d10068e3be.jpg
+[M5-IN] 000166__0d18f7ef21.jpg merged=False
+INFO:     192.168.0.240:61332 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000166__0d18f7ef21.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61333 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 35] 000166__0d18f7ef21.jpg
+[M5-IN] 000168__5cfedb3dcd.jpg merged=False
+INFO:     192.168.0.240:61337 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000168__5cfedb3dcd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61338 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 36] 000168__5cfedb3dcd.jpg
+[M5-IN] 000169__52a0d292a4.jpg merged=False
+INFO:     192.168.0.240:61341 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000169__52a0d292a4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61342 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 37] 000169__52a0d292a4.jpg
+[M5-IN] 000170__67ed265b9f.jpg merged=False
+INFO:     192.168.0.240:61345 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000170__67ed265b9f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61346 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 38] 000170__67ed265b9f.jpg
+[M5-IN] 000172__ad3bdcb892.jpg merged=False
+INFO:     192.168.0.240:61350 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000172__ad3bdcb892.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61351 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 39] 000172__ad3bdcb892.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000175__cfe16fe588.jpg merged=False
+INFO:     192.168.0.240:61356 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000175__cfe16fe588.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61357 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 40] 000175__cfe16fe588.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=5
+  [RELOAD] model reloaded
+[M5-IN] 000177__d86d909989.jpg merged=False
+INFO:     192.168.0.240:61361 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000177__d86d909989.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61362 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 41] 000177__d86d909989.jpg
+[M5-IN] 000178__e22b24d0b4.jpg merged=False
+INFO:     192.168.0.240:61365 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000178__e22b24d0b4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61366 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[PI_B 42] 000178__e22b24d0b4.jpg
+[M5-IN] 000180__54f80a8731.jpg merged=False
+INFO:     192.168.0.240:61370 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000180__54f80a8731.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61371 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 43] 000180__54f80a8731.jpg
+[M5-IN] 000181__14476adac6.jpg merged=False
+INFO:     192.168.0.240:61374 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000181__14476adac6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61375 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 44] 000181__14476adac6.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+INFO:     192.168.0.23:52749 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000006__fdcf2a389a.jpg merged=False
+INFO:     192.168.0.240:59400 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000006__fdcf2a389a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59401 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000007__32d056e448.jpg merged=False
+INFO:     192.168.0.240:59404 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000007__32d056e448.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59405 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000008__f7db79b241.jpg merged=False
+INFO:     192.168.0.240:59408 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000008__f7db79b241.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59409 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000009__4290030c1a.jpg merged=False
+INFO:     192.168.0.240:59412 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000009__4290030c1a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59413 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000012__aec832061d.jpg merged=False
+INFO:     192.168.0.240:59418 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000012__aec832061d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59419 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000014__080c7ce073.jpg merged=False
+INFO:     192.168.0.240:59423 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000014__080c7ce073.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59424 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 45] 000014__080c7ce073.jpg
+[M5-IN] 000015__73f9350481.jpg merged=False
+INFO:     192.168.0.240:59427 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000015__73f9350481.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59428 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 46] 000015__73f9350481.jpg
+[M5-IN] 000017__1b35c8a527.jpg merged=False
+INFO:     192.168.0.240:59432 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000017__1b35c8a527.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59433 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 47] 000017__1b35c8a527.jpg
+[M5-IN] 000019__aef2d2c726.jpg merged=False
+INFO:     192.168.0.240:59437 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000019__aef2d2c726.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59438 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000021__613bad130f.jpg merged=False
+INFO:     192.168.0.240:59442 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000021__613bad130f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59443 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 48] 000021__613bad130f.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+INFO:     192.168.0.23:53578 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000040__9998a75fb8.jpg merged=False
+INFO:     192.168.0.240:50285 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000040__9998a75fb8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50286 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000042__3041ee7385.jpg merged=False
+INFO:     192.168.0.240:50290 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000042__3041ee7385.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50291 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000043__f65b9f415e.jpg merged=False
+INFO:     192.168.0.240:50294 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000043__f65b9f415e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50295 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 49] 000043__f65b9f415e.jpg
+[M5-IN] 000044__4061d2f1af.jpg merged=False
+INFO:     192.168.0.240:50298 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000044__4061d2f1af.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50299 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000045__9d7731d4ab.jpg merged=False
+INFO:     192.168.0.240:50302 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000045__9d7731d4ab.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50303 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000046__8f70fa1114.jpg merged=False
+INFO:     192.168.0.240:50306 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000046__8f70fa1114.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50307 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000050__5685d42177.jpg merged=False
+INFO:     192.168.0.240:50313 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000050__5685d42177.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:50314 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000052__52fbf614d8.jpg merged=False
+INFO:     192.168.0.240:64672 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000052__52fbf614d8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64673 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000053__9b5b00929f.jpg merged=False
+INFO:     192.168.0.240:64676 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000053__9b5b00929f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64677 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 50] 000053__9b5b00929f.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000055__88e3d493fe.jpg merged=False
+INFO:     192.168.0.240:64681 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000055__88e3d493fe.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64682 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 51] 000055__88e3d493fe.jpg
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[M5-IN] 000059__810a87c316.jpg merged=False
+INFO:     192.168.0.240:64688 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000059__810a87c316.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64689 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000063__e3e287d101.jpg merged=False
+INFO:     192.168.0.240:64695 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000063__e3e287d101.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64696 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 52] 000063__e3e287d101.jpg
+[M5-IN] 000064__77574243c1.jpg merged=False
+INFO:     192.168.0.240:64699 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000064__77574243c1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64700 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+[M5-IN] 000065__5db9c92c07.jpg merged=False
+INFO:     192.168.0.240:51713 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000065__5db9c92c07.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51714 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 53] 000065__5db9c92c07.jpg
+[M5-IN] 000066__cfde5d2239.jpg merged=False
+INFO:     192.168.0.240:51717 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000066__cfde5d2239.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51718 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 54] 000066__cfde5d2239.jpg
+[M5-IN] 000068__66c9fa82ee.jpg merged=False
+INFO:     192.168.0.240:51722 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000068__66c9fa82ee.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51723 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 55] 000068__66c9fa82ee.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000075__eb87fb1dee.jpg merged=False
+INFO:     192.168.0.240:51732 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000075__eb87fb1dee.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51733 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 56] 000075__eb87fb1dee.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000080__9554c097c8.jpg merged=False
+INFO:     192.168.0.240:51740 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000080__9554c097c8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51741 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 57] 000080__9554c097c8.jpg
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[M5-IN] 000082__bcc50ccb75.jpg merged=False
+INFO:     192.168.0.240:49688 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000082__bcc50ccb75.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49689 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 58] 000082__bcc50ccb75.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000091__835750c86d.jpg merged=False
+INFO:     192.168.0.240:49700 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000091__835750c86d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49701 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 59] 000091__835750c86d.jpg
+[M5-IN] 000092__e0266eddbe.jpg merged=False
+INFO:     192.168.0.240:49704 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000092__e0266eddbe.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49705 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000093__15a3cbab97.jpg merged=False
+INFO:     192.168.0.240:49708 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000093__15a3cbab97.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49709 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 60] 000092__e0266eddbe.jpg
+[M5-IN] 000095__769f27aeac.jpg merged=False
+INFO:     192.168.0.240:49713 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000095__769f27aeac.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49714 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+  [RELOAD] model reloaded
+[PI_B 61] 000093__15a3cbab97.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 62] 000095__769f27aeac.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000104__b6baf673c6.jpg merged=False
+INFO:     192.168.0.240:54207 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000104__b6baf673c6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54208 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 63] 000104__b6baf673c6.jpg
+[M5-IN] 000106__611dbb0c87.jpg merged=False
+INFO:     192.168.0.240:54212 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000106__611dbb0c87.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54213 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 64] 000106__611dbb0c87.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000109__ec24f147fd.jpg merged=False
+INFO:     192.168.0.240:54218 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000109__ec24f147fd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54219 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 65] 000109__ec24f147fd.jpg
+[M5-IN] 000110__bbea759a01.jpg merged=False
+INFO:     192.168.0.240:54222 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000110__bbea759a01.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54223 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000111__5b7b26e6cf.jpg merged=False
+INFO:     192.168.0.240:54226 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000111__5b7b26e6cf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54227 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 66] 000110__bbea759a01.jpg
+[M5-IN] 000112__e0313865b5.jpg merged=False
+INFO:     192.168.0.240:54230 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000112__e0313865b5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54231 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000113__f923585d09.jpg merged=False
+INFO:     192.168.0.240:54234 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000113__f923585d09.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54235 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000114__59f4a3a5f2.jpg merged=False
+INFO:     192.168.0.240:54238 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000114__59f4a3a5f2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54239 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 67] 000111__5b7b26e6cf.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 68] 000112__e0313865b5.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 69] 000113__f923585d09.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 70] 000114__59f4a3a5f2.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000116__f99132d6bc.jpg merged=False
+INFO:     192.168.0.240:54243 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000116__f99132d6bc.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54244 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 71] 000116__f99132d6bc.jpg
+[M5-IN] 000117__f119c85b1e.jpg merged=False
+INFO:     192.168.0.240:54247 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000117__f119c85b1e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54248 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000118__1400e50d49.jpg merged=False
+INFO:     192.168.0.240:54251 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000118__1400e50d49.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54252 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000119__77585dd439.jpg merged=False
+INFO:     192.168.0.240:54255 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000119__77585dd439.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54256 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000120__b87959e726.jpg merged=False
+INFO:     192.168.0.240:54259 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000120__b87959e726.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54260 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 72] 000117__f119c85b1e.jpg
+[M5-IN] 000121__fdb2864a9c.jpg merged=False
+INFO:     192.168.0.240:54263 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000121__fdb2864a9c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54264 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000122__3363003aba.jpg merged=False
+INFO:     192.168.0.240:54267 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000122__3363003aba.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54268 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 73] 000118__1400e50d49.jpg
+[M5-IN] 000124__62d275f9d7.jpg merged=False
+INFO:     192.168.0.240:54272 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000124__62d275f9d7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54273 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000126__686b8d76cb.jpg merged=False
+INFO:     192.168.0.240:54277 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000126__686b8d76cb.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54278 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=flood sev=1 conf=1
+[PI_B 74] 000119__77585dd439.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 75] 000120__b87959e726.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=5
+[PI_B 76] 000121__fdb2864a9c.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 77] 000122__3363003aba.jpg
+         sent -> Pi_A | cat=hurricane sev=1 conf=1
+[PI_B 78] 000124__62d275f9d7.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 79] 000126__686b8d76cb.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000140__a4ff53bd2d.jpg merged=False
+INFO:     192.168.0.240:61129 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000140__a4ff53bd2d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61130 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 80] 000140__a4ff53bd2d.jpg
+[M5-IN] 000141__fd3fba06a7.jpg merged=False
+INFO:     192.168.0.240:61133 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000141__fd3fba06a7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61134 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000142__493efdc6a2.jpg merged=False
+INFO:     192.168.0.240:61137 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000142__493efdc6a2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61138 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+  [RELOAD] model reloaded
+[PI_B 81] 000141__fd3fba06a7.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 82] 000142__493efdc6a2.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000144__ef6a4f4c63.jpg merged=False
+INFO:     192.168.0.240:49887 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000144__ef6a4f4c63.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49888 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 83] 000144__ef6a4f4c63.jpg
+[M5-IN] 000145__51ffa35f27.jpg merged=False
+INFO:     192.168.0.240:49891 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000145__51ffa35f27.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49892 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=flood sev=1 conf=1
+[PI_B 84] 000145__51ffa35f27.jpg
+[M5-IN] 000147__790a2e6d2a.jpg merged=False
+INFO:     192.168.0.240:49896 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000147__790a2e6d2a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49897 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 85] 000147__790a2e6d2a.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000150__4344aa587b.jpg merged=False
+INFO:     192.168.0.240:49902 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000150__4344aa587b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:49903 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 86] 000150__4344aa587b.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000156__c4b8b83673.jpg merged=False
+INFO:     192.168.0.240:62773 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000156__c4b8b83673.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62774 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 87] 000156__c4b8b83673.jpg
+[M5-IN] 000158__dfe8af3889.jpg merged=False
+INFO:     192.168.0.240:62778 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000158__dfe8af3889.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62779 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 88] 000158__dfe8af3889.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000160__a3b4363235.jpg merged=False
+INFO:     192.168.0.240:62784 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000160__a3b4363235.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62785 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 89] 000160__a3b4363235.jpg
+[M5-IN] 000159__693f673765.jpg merged=False
+INFO:     192.168.0.240:62789 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000159__693f673765.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62790 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 90] 000159__693f673765.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000165__d10068e3be.jpg merged=False
+INFO:     192.168.0.240:62832 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000165__d10068e3be.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62833 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000166__0d18f7ef21.jpg merged=False
+INFO:     192.168.0.240:62837 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000166__0d18f7ef21.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62838 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000167__d6bd43419f.jpg merged=False
+INFO:     192.168.0.240:62841 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000167__d6bd43419f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62842 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 91] 000167__d6bd43419f.jpg
+[M5-IN] 000168__5cfedb3dcd.jpg merged=False
+INFO:     192.168.0.240:62845 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000168__5cfedb3dcd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62846 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000170__67ed265b9f.jpg merged=False
+INFO:     192.168.0.240:62851 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000170__67ed265b9f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62852 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000171__b1eb340fef.jpg merged=False
+INFO:     192.168.0.240:62855 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000171__b1eb340fef.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62856 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 92] 000171__b1eb340fef.jpg
+[M5-IN] 000175__cfe16fe588.jpg merged=False
+INFO:     192.168.0.240:62862 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000175__cfe16fe588.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62863 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=2
+[M5-IN] 000177__d86d909989.jpg merged=False
+INFO:     192.168.0.240:62867 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000177__d86d909989.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62868 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000179__9412cf4653.jpg merged=False
+INFO:     192.168.0.240:62872 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000179__9412cf4653.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62873 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 93] 000179__9412cf4653.jpg
+[M5-IN] 000180__54f80a8731.jpg merged=False
+INFO:     192.168.0.240:62876 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000180__54f80a8731.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62877 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000181__14476adac6.jpg merged=False
+INFO:     192.168.0.240:62881 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000181__14476adac6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62882 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000185__0a5e2564f6.jpg merged=False
+INFO:     192.168.0.240:62910 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000185__0a5e2564f6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62911 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 94] 000185__0a5e2564f6.jpg
+[M5-IN] 000186__c7108329e1.jpg merged=False
+INFO:     192.168.0.240:62914 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000186__c7108329e1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:62915 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 95] 000186__c7108329e1.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000190__fbdf92efb4.jpg merged=False
+INFO:     192.168.0.240:64818 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000190__fbdf92efb4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64819 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 96] 000190__fbdf92efb4.jpg
+[M5-IN] 000191__8e29a35a48.jpg merged=False
+INFO:     192.168.0.240:64822 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000191__8e29a35a48.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64823 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 97] 000191__8e29a35a48.jpg
+[M5-IN] 000193__3796ac4162.jpg merged=False
+INFO:     192.168.0.240:64827 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000193__3796ac4162.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64828 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000194__48474668ec.jpg merged=False
+INFO:     192.168.0.240:64831 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000194__48474668ec.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64832 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000195__f971a1440b.jpg merged=False
+INFO:     192.168.0.240:64835 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000195__f971a1440b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64836 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000196__abc3a1579e.jpg merged=False
+INFO:     192.168.0.240:64839 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000196__abc3a1579e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64840 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 98] 000193__3796ac4162.jpg
+[M5-IN] 000197__ad63a94674.jpg merged=False
+INFO:     192.168.0.240:64843 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000197__ad63a94674.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64844 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000198__cc0f9e8bb9.jpg merged=False
+INFO:     192.168.0.240:64847 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000198__cc0f9e8bb9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64848 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 99] 000194__48474668ec.jpg
+[M5-IN] 000199__cef3a00c4e.jpg merged=False
+INFO:     192.168.0.240:64851 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000199__cef3a00c4e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64852 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=hurricane sev=2 conf=1
+[PI_B 100] 000195__f971a1440b.jpg
+[M5-IN] 000202__d50468f4b4.jpg merged=False
+INFO:     192.168.0.240:64857 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000202__d50468f4b4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64858 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000203__5cec4c1fed.jpg merged=False
+INFO:     192.168.0.240:64861 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000203__5cec4c1fed.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64862 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+  [RELOAD] model reloaded
+[PI_B 101] 000196__abc3a1579e.jpg
+[M5-IN] 000204__85c5d53f1f.jpg merged=False
+INFO:     192.168.0.240:64865 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000204__85c5d53f1f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64866 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 102] 000197__ad63a94674.jpg
+[M5-IN] 000206__0d82fc7696.jpg merged=False
+INFO:     192.168.0.240:64870 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000206__0d82fc7696.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64871 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=3
+[PI_B 103] 000198__cc0f9e8bb9.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 104] 000199__cef3a00c4e.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 105] 000202__d50468f4b4.jpg
+[M5-IN] 000215__41223f3281.jpg merged=False
+INFO:     192.168.0.240:64882 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000215__41223f3281.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64883 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=fire sev=1 conf=1
+[PI_B 106] 000203__5cec4c1fed.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 107] 000204__85c5d53f1f.jpg
+[M5-IN] 000218__23c0cea735.jpg merged=False
+INFO:     192.168.0.240:64889 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000218__23c0cea735.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64890 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000219__bad9dae191.jpg merged=False
+INFO:     192.168.0.240:64893 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000219__bad9dae191.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64894 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 108] 000206__0d82fc7696.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 109] 000215__41223f3281.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=2
+[PI_B 110] 000218__23c0cea735.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 111] 000219__bad9dae191.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000221__59306cab2e.jpg merged=False
+INFO:     192.168.0.240:64907 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000221__59306cab2e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64908 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 112] 000221__59306cab2e.jpg
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[M5-IN] 000224__677fb6bb77.jpg merged=False
+INFO:     192.168.0.240:64913 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000224__677fb6bb77.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64914 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 113] 000224__677fb6bb77.jpg
+[M5-IN] 000225__3595b98493.jpg merged=False
+INFO:     192.168.0.240:64917 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000225__3595b98493.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64918 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 114] 000225__3595b98493.jpg
+[M5-IN] 000230__cea213b8c1.jpg merged=False
+INFO:     192.168.0.240:64925 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000230__cea213b8c1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64926 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000231__586103662f.jpg merged=False
+INFO:     192.168.0.240:64929 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000231__586103662f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64930 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 115] 000230__cea213b8c1.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 116] 000231__586103662f.jpg
+[M5-IN] 000234__d7ee90e4bd.jpg merged=False
+INFO:     192.168.0.240:64936 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000234__d7ee90e4bd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64937 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000237__5d0477534e.jpg merged=False
+INFO:     192.168.0.240:64942 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000237__5d0477534e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64943 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 117] 000234__d7ee90e4bd.jpg
+[M5-IN] 000239__2ec86ef887.jpg merged=False
+INFO:     192.168.0.240:64947 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000239__2ec86ef887.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64948 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000240__ff5978f8fe.jpg merged=False
+INFO:     192.168.0.240:64951 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000240__ff5978f8fe.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64952 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 118] 000237__5d0477534e.jpg
+[M5-IN] 000241__3e4a60df7b.jpg merged=False
+INFO:     192.168.0.240:64955 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000241__3e4a60df7b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64956 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000242__6030aa4237.jpg merged=False
+INFO:     192.168.0.240:64959 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000242__6030aa4237.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64960 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000243__40778b3e43.jpg merged=False
+INFO:     192.168.0.240:64963 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000243__40778b3e43.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64964 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 119] 000239__2ec86ef887.jpg
+[M5-IN] 000245__4e8ed27ff3.jpg merged=False
+INFO:     192.168.0.240:64968 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000245__4e8ed27ff3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64969 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 120] 000240__ff5978f8fe.jpg
+[M5-IN] 000246__be438bd583.jpg merged=False
+INFO:     192.168.0.240:64972 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000246__be438bd583.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64973 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000247__9427c4eddb.jpg merged=False
+INFO:     192.168.0.240:64976 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000247__9427c4eddb.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64977 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000250__92c68d0fec.jpg merged=False
+INFO:     192.168.0.240:64982 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000250__92c68d0fec.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64983 - "POST /patch_e2e HTTP/1.1" 200 OK
+  [RELOAD] model reloaded
+[PI_B 121] 000241__3e4a60df7b.jpg
+[M5-IN] 000251__1bfb2ce2d9.jpg merged=False
+INFO:     192.168.0.240:64986 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000251__1bfb2ce2d9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64987 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 122] 000242__6030aa4237.jpg
+[M5-IN] 000253__8375eaacfb.jpg merged=False
+INFO:     192.168.0.240:64992 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000253__8375eaacfb.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:64993 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 123] 000243__40778b3e43.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 124] 000245__4e8ed27ff3.jpg
+[M5-IN] 000257__f2aae5cf2c.jpg merged=False
+INFO:     192.168.0.240:65000 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000257__f2aae5cf2c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65001 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000258__4bcee418af.jpg merged=False
+INFO:     192.168.0.240:65004 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000258__4bcee418af.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65005 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 125] 000246__be438bd583.jpg
+[M5-IN] 000263__b191cfcb5f.jpg merged=False
+INFO:     192.168.0.240:65013 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000263__b191cfcb5f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65014 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=3
+[PI_B 126] 000247__9427c4eddb.jpg
+[M5-IN] 000265__2bf4d64d78.jpg merged=False
+INFO:     192.168.0.240:65019 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000265__2bf4d64d78.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65020 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 127] 000250__92c68d0fec.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 128] 000251__1bfb2ce2d9.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 129] 000253__8375eaacfb.jpg
+[M5-IN] 000271__2d1d6df2b4.jpg merged=False
+INFO:     192.168.0.240:65030 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000271__2d1d6df2b4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65031 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000272__b865f93e74.jpg merged=False
+INFO:     192.168.0.240:65034 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000272__b865f93e74.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65035 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 130] 000257__f2aae5cf2c.jpg
+[M5-IN] 000274__3300b3872d.jpg merged=False
+INFO:     192.168.0.240:65039 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000274__3300b3872d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65040 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000275__f1fa9d3234.jpg merged=False
+INFO:     192.168.0.240:65043 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000275__f1fa9d3234.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65044 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 131] 000258__4bcee418af.jpg
+[M5-IN] 000277__64b3dcb4ec.jpg merged=False
+INFO:     192.168.0.240:65048 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000277__64b3dcb4ec.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65049 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000278__862ba9a671.jpg merged=False
+INFO:     192.168.0.240:65052 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000278__862ba9a671.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65053 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 132] 000263__b191cfcb5f.jpg
+[M5-IN] 000279__69eb72152c.jpg merged=False
+INFO:     192.168.0.240:65056 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000279__69eb72152c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65057 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 133] 000265__2bf4d64d78.jpg
+[M5-IN] 000282__cd6a369571.jpg merged=False
+INFO:     192.168.0.240:65063 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000282__cd6a369571.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65064 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000283__1280f6e324.jpg merged=False
+INFO:     192.168.0.240:65067 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000283__1280f6e324.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65068 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000284__9edbb74ccd.jpg merged=False
+INFO:     192.168.0.240:65071 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000284__9edbb74ccd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65072 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 134] 000271__2d1d6df2b4.jpg
+[M5-IN] 000286__e57960932d.jpg merged=False
+INFO:     192.168.0.240:65077 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000286__e57960932d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65078 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 135] 000272__b865f93e74.jpg
+[M5-IN] 000289__bdcc0d40bc.jpg merged=False
+INFO:     192.168.0.240:65084 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000289__bdcc0d40bc.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65085 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 136] 000274__3300b3872d.jpg
+[M5-IN] 000292__3931f8623a.jpg merged=False
+INFO:     192.168.0.240:65091 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000292__3931f8623a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65092 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 137] 000275__f1fa9d3234.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 138] 000277__64b3dcb4ec.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 139] 000278__862ba9a671.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 140] 000279__69eb72152c.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+  [RELOAD] model reloaded
+[PI_B 141] 000282__cd6a369571.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 142] 000283__1280f6e324.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 143] 000284__9edbb74ccd.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 144] 000286__e57960932d.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 145] 000289__bdcc0d40bc.jpg
+[M5-IN] 000294__f47fbd312c.jpg merged=False
+INFO:     192.168.0.240:65115 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000294__f47fbd312c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65116 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 146] 000292__3931f8623a.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 147] 000294__f47fbd312c.jpg
+[M5-IN] 000298__4876190383.jpg merged=False
+INFO:     192.168.0.240:65124 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000298__4876190383.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65125 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 148] 000298__4876190383.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000314__360d5e05d1.jpg merged=False
+INFO:     192.168.0.240:54793 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000314__360d5e05d1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54794 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 149] 000314__360d5e05d1.jpg
+[M5-IN] 000315__9e5b7bda4c.jpg merged=False
+INFO:     192.168.0.240:54797 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000315__9e5b7bda4c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54798 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000317__63293deca9.jpg merged=False
+INFO:     192.168.0.240:54803 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000317__63293deca9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54804 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 150] 000315__9e5b7bda4c.jpg
+[M5-IN] 000318__8f177c28c8.jpg merged=False
+INFO:     192.168.0.240:54807 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000318__8f177c28c8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54808 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 151] 000317__63293deca9.jpg
+[M5-IN] 000320__47f8d8f1b9.jpg merged=False
+INFO:     192.168.0.240:54813 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000320__47f8d8f1b9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54814 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 152] 000318__8f177c28c8.jpg
+[M5-IN] 000324__95fcb57c94.jpg merged=False
+INFO:     192.168.0.240:54822 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000324__95fcb57c94.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54823 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 153] 000320__47f8d8f1b9.jpg
+[M5-IN] 000327__7fb3971214.jpg merged=False
+INFO:     192.168.0.240:54829 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000327__7fb3971214.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54830 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 154] 000324__95fcb57c94.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 155] 000327__7fb3971214.jpg
+[M5-IN] 000332__bfb7d8f235.jpg merged=False
+INFO:     192.168.0.240:54839 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000332__bfb7d8f235.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54840 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+[PI_B 156] 000332__bfb7d8f235.jpg
+[M5-IN] 000333__76f93cdff2.jpg merged=False
+INFO:     192.168.0.240:54844 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000333__76f93cdff2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54845 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000334__2beb76fd51.jpg merged=False
+INFO:     192.168.0.240:54848 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000334__2beb76fd51.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54849 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 157] 000333__76f93cdff2.jpg
+[M5-IN] 000335__98c3cce3ab.jpg merged=False
+INFO:     192.168.0.240:54853 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000335__98c3cce3ab.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54854 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000337__9f7ecbe773.jpg merged=False
+INFO:     192.168.0.240:54859 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000337__9f7ecbe773.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54860 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 158] 000334__2beb76fd51.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 159] 000335__98c3cce3ab.jpg
+[M5-IN] 000341__296303a53c.jpg merged=False
+INFO:     192.168.0.240:54868 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000341__296303a53c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54869 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 160] 000337__9f7ecbe773.jpg
+[M5-IN] 000344__ab789ae607.jpg merged=False
+INFO:     192.168.0.240:54874 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000344__ab789ae607.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54875 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000345__36bdc519a1.jpg merged=False
+INFO:     192.168.0.240:54878 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000345__36bdc519a1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54879 - "POST /patch_e2e HTTP/1.1" 200 OK
+  [RELOAD] model reloaded
+[PI_B 161] 000341__296303a53c.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 162] 000344__ab789ae607.jpg
+[M5-IN] 000348__c2ff163a0e.jpg merged=False
+INFO:     192.168.0.240:54886 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000348__c2ff163a0e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54887 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000349__12e2059454.jpg merged=False
+INFO:     192.168.0.240:54890 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000349__12e2059454.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54891 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=2
+[PI_B 163] 000345__36bdc519a1.jpg
+         sent -> Pi_A | cat=flood sev=1 conf=1
+[PI_B 164] 000348__c2ff163a0e.jpg
+[M5-IN] 000353__13a2a494f6.jpg merged=False
+INFO:     192.168.0.240:54899 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000353__13a2a494f6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54900 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000355__6dac34c958.jpg merged=False
+INFO:     192.168.0.240:54904 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000355__6dac34c958.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54905 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 165] 000349__12e2059454.jpg
+[M5-IN] 000356__067b87424c.jpg merged=False
+INFO:     192.168.0.240:54909 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000356__067b87424c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54910 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 166] 000353__13a2a494f6.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 167] 000355__6dac34c958.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 168] 000356__067b87424c.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000357__fe7f436e9a.jpg merged=False
+INFO:     192.168.0.240:54918 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000357__fe7f436e9a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54919 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 169] 000357__fe7f436e9a.jpg
+[M5-IN] 000358__aa00f5319c.jpg merged=False
+INFO:     192.168.0.240:54922 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000358__aa00f5319c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54923 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000359__205d4b1673.jpg merged=False
+INFO:     192.168.0.240:54927 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000359__205d4b1673.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54928 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 170] 000358__aa00f5319c.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 171] 000359__205d4b1673.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=4
+[M5-IN] 000360__ded1c4f8a8.jpg merged=False
+INFO:     192.168.0.240:54950 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000360__ded1c4f8a8.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54951 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 172] 000360__ded1c4f8a8.jpg
+[M5-IN] 000361__f052c15020.jpg merged=False
+INFO:     192.168.0.240:54955 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000361__f052c15020.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54956 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000362__52bda021cc.jpg merged=False
+INFO:     192.168.0.240:54959 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000362__52bda021cc.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54960 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 173] 000361__f052c15020.jpg
+[M5-IN] 000363__2e7e4949c2.jpg merged=False
+INFO:     192.168.0.240:54963 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000363__2e7e4949c2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54964 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 174] 000362__52bda021cc.jpg
+[M5-IN] 000366__2503fef52b.jpg merged=False
+INFO:     192.168.0.240:54971 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000366__2503fef52b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54972 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 175] 000363__2e7e4949c2.jpg
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 176] 000366__2503fef52b.jpg
+[M5-IN] 000370__9a6ea7f856.jpg merged=False
+INFO:     192.168.0.240:54980 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000370__9a6ea7f856.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54981 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000371__4606d4c1ef.jpg merged=False
+INFO:     192.168.0.240:54984 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000371__4606d4c1ef.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54985 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 177] 000370__9a6ea7f856.jpg
+[M5-IN] 000372__6edf02a0d5.jpg merged=False
+INFO:     192.168.0.240:54989 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000372__6edf02a0d5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54990 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000373__392bb25782.jpg merged=False
+INFO:     192.168.0.240:54993 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000373__392bb25782.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54994 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000374__60f9aa1b56.jpg merged=False
+INFO:     192.168.0.240:54997 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000374__60f9aa1b56.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:54998 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 178] 000371__4606d4c1ef.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 179] 000372__6edf02a0d5.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=3
+[PI_B 180] 000373__392bb25782.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+  [RELOAD] model reloaded
+[PI_B 181] 000374__60f9aa1b56.jpg
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[M5-IN] 000377__57f66c3401.jpg merged=False
+INFO:     192.168.0.240:55024 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000377__57f66c3401.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:55025 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 182] 000377__57f66c3401.jpg
+[M5-IN] 000378__12e08447f4.jpg merged=False
+INFO:     192.168.0.240:55028 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000378__12e08447f4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:55029 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 183] 000378__12e08447f4.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000381__be2b1cba2d.jpg merged=False
+INFO:     192.168.0.240:65490 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000381__be2b1cba2d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65491 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 184] 000381__be2b1cba2d.jpg
+[M5-IN] 000383__f5083b5680.jpg merged=False
+INFO:     192.168.0.240:65496 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000383__f5083b5680.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65497 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 185] 000383__f5083b5680.jpg
+[M5-IN] 000385__55dad9c37c.jpg merged=False
+INFO:     192.168.0.240:65501 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000385__55dad9c37c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:65502 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=hurricane sev=2 conf=1
+[PI_B 186] 000385__55dad9c37c.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000388__4a72a00381.jpg merged=False
+INFO:     192.168.0.240:61178 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000388__4a72a00381.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61179 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 187] 000388__4a72a00381.jpg
+[M5-IN] 000390__1e1e5d3870.jpg merged=False
+INFO:     192.168.0.240:61184 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000390__1e1e5d3870.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61185 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 188] 000390__1e1e5d3870.jpg
+[M5-IN] 000391__bc07160402.jpg merged=False
+INFO:     192.168.0.240:61188 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000391__bc07160402.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61189 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000392__5d5288786f.jpg merged=False
+INFO:     192.168.0.240:61192 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000392__5d5288786f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61193 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 189] 000391__bc07160402.jpg
+         sent -> Pi_A | cat=flood sev=2 conf=1
+[PI_B 190] 000392__5d5288786f.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000395__9119f40975.jpg merged=False
+INFO:     192.168.0.240:61200 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000395__9119f40975.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61201 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 191] 000395__9119f40975.jpg
+[M5-IN] 000396__02f6e85413.jpg merged=False
+INFO:     192.168.0.240:61204 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000396__02f6e85413.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61205 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000397__00a81ec31a.jpg merged=False
+INFO:     192.168.0.240:61208 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000397__00a81ec31a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61209 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000399__92e7bf83bf.jpg merged=False
+INFO:     192.168.0.240:61213 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000399__92e7bf83bf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:61214 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 192] 000396__02f6e85413.jpg
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 193] 000397__00a81ec31a.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 194] 000399__92e7bf83bf.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000404__3b0d436535.jpg merged=False
+INFO:     192.168.0.240:60205 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000404__3b0d436535.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60206 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 195] 000404__3b0d436535.jpg
+[M5-IN] 000407__cafb87fcc6.jpg merged=False
+INFO:     192.168.0.240:60209 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000407__cafb87fcc6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60210 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000408__9af1e9ac4b.jpg merged=False
+INFO:     192.168.0.240:60213 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000408__9af1e9ac4b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60214 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000405__91f3638636.jpg merged=False
+INFO:     192.168.0.240:60218 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000405__91f3638636.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60219 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+[PI_B 196] 000407__cafb87fcc6.jpg
+[M5-IN] 000406__f27df317c9.jpg merged=False
+INFO:     192.168.0.240:60223 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000406__f27df317c9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60224 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000411__de50a88d5e.jpg merged=False
+INFO:     192.168.0.240:60227 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000411__de50a88d5e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60228 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 197] 000408__9af1e9ac4b.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 198] 000405__91f3638636.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 199] 000406__f27df317c9.jpg
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 200] 000411__de50a88d5e.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+  [RELOAD] model reloaded
+[M5-IN] 000413__48116fdaf3.jpg merged=False
+INFO:     192.168.0.240:60099 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000413__48116fdaf3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60100 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 201] 000413__48116fdaf3.jpg
+[M5-IN] 000414__55507a514d.jpg merged=False
+INFO:     192.168.0.240:60103 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000414__55507a514d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60104 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000416__0a1aa31755.jpg merged=False
+INFO:     192.168.0.240:60108 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000416__0a1aa31755.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60109 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 202] 000414__55507a514d.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 203] 000416__0a1aa31755.jpg
+[M5-IN] 000417__54d5a5bcf2.jpg merged=False
+INFO:     192.168.0.240:60112 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000417__54d5a5bcf2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60113 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000420__caea7c41cf.jpg merged=False
+INFO:     192.168.0.240:60118 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000420__caea7c41cf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60119 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 204] 000417__54d5a5bcf2.jpg
+[M5-IN] 000421__477f64d7be.jpg merged=False
+INFO:     192.168.0.240:60122 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000421__477f64d7be.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60123 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 205] 000420__caea7c41cf.jpg
+[M5-IN] 000423__d63aedf5fe.jpg merged=False
+INFO:     192.168.0.240:60128 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000423__d63aedf5fe.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60129 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000424__723ac6dc89.jpg merged=False
+INFO:     192.168.0.240:60132 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000424__723ac6dc89.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60133 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 206] 000421__477f64d7be.jpg
+[M5-IN] 000427__1d6c7d524c.jpg merged=False
+INFO:     192.168.0.240:60138 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000427__1d6c7d524c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60139 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 207] 000423__d63aedf5fe.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 208] 000424__723ac6dc89.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 209] 000427__1d6c7d524c.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000429__6f9fb0293e.jpg merged=False
+INFO:     192.168.0.240:60145 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000429__6f9fb0293e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60146 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 210] 000429__6f9fb0293e.jpg
+[M5-IN] 000430__0733c93bb9.jpg merged=False
+INFO:     192.168.0.240:60149 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000430__0733c93bb9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60150 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000432__357bf701e3.jpg merged=False
+INFO:     192.168.0.240:60154 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000432__357bf701e3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:60155 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 211] 000430__0733c93bb9.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 212] 000432__357bf701e3.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000433__84d01e6f66.jpg merged=False
+INFO:     192.168.0.240:51352 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000433__84d01e6f66.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51353 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 213] 000433__84d01e6f66.jpg
+[M5-IN] 000434__a6ad3f7693.jpg merged=False
+INFO:     192.168.0.240:51356 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000434__a6ad3f7693.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51357 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 214] 000434__a6ad3f7693.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000435__8f812b3325.jpg merged=False
+INFO:     192.168.0.240:56210 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000435__8f812b3325.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56211 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 215] 000435__8f812b3325.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000436__22e0bfdd03.jpg merged=False
+INFO:     192.168.0.240:57585 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000436__22e0bfdd03.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57586 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 216] 000436__22e0bfdd03.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000438__9468a9ae8b.jpg merged=False
+INFO:     192.168.0.240:57592 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000438__9468a9ae8b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57593 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 217] 000438__9468a9ae8b.jpg
+[M5-IN] 000439__a4e2afc927.jpg merged=False
+INFO:     192.168.0.240:57597 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000439__a4e2afc927.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57598 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 218] 000439__a4e2afc927.jpg
+[M5-IN] 000440__58407140a4.jpg merged=False
+INFO:     192.168.0.240:57602 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000440__58407140a4.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57603 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 219] 000440__58407140a4.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000445__5037359c3f.jpg merged=False
+INFO:     192.168.0.240:57615 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000445__5037359c3f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57616 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 220] 000445__5037359c3f.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+  [RELOAD] model reloaded
+[M5-IN] 000446__620b7a1cfd.jpg merged=False
+INFO:     192.168.0.240:57620 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000446__620b7a1cfd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57621 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 221] 000446__620b7a1cfd.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000448__6a6bb41e3c.jpg merged=False
+INFO:     192.168.0.240:57627 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000448__6a6bb41e3c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57628 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 222] 000448__6a6bb41e3c.jpg
+[M5-IN] 000449__003a0e79f2.jpg merged=False
+INFO:     192.168.0.240:57632 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000449__003a0e79f2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57633 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=2 conf=3
+[PI_B 223] 000449__003a0e79f2.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000452__be022552e6.jpg merged=False
+INFO:     192.168.0.240:57641 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000452__be022552e6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57642 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 224] 000452__be022552e6.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000455__51dcc67ec0.jpg merged=False
+INFO:     192.168.0.240:57650 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000455__51dcc67ec0.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57651 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 225] 000455__51dcc67ec0.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000458__2260e09a85.jpg merged=False
+INFO:     192.168.0.240:57659 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000458__2260e09a85.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57660 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 226] 000458__2260e09a85.jpg
+[M5-IN] 000459__5be67e2bdf.jpg merged=False
+INFO:     192.168.0.240:57664 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000459__5be67e2bdf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:57665 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 227] 000459__5be67e2bdf.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000460__9a8910ba9f.jpg merged=False
+INFO:     192.168.0.240:51301 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000460__9a8910ba9f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51302 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 228] 000460__9a8910ba9f.jpg
+[M5-IN] 000461__0699cba9c7.jpg merged=False
+INFO:     192.168.0.240:51306 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000461__0699cba9c7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51307 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 229] 000461__0699cba9c7.jpg
+[M5-IN] 000462__91b56a5ee2.jpg merged=False
+INFO:     192.168.0.240:51311 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000462__91b56a5ee2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51312 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 230] 000462__91b56a5ee2.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000464__38de025ed2.jpg merged=False
+INFO:     192.168.0.240:51318 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000464__38de025ed2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51319 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 231] 000464__38de025ed2.jpg
+[M5-IN] 000465__649d1ca8d2.jpg merged=False
+INFO:     192.168.0.240:51323 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000465__649d1ca8d2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51324 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[PI_B 232] 000465__649d1ca8d2.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=3
+[M5-IN] 000467__708b6a9637.jpg merged=False
+INFO:     192.168.0.240:51330 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000467__708b6a9637.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51331 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 233] 000467__708b6a9637.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000469__8dbd81cfa1.jpg merged=False
+INFO:     192.168.0.240:51337 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000469__8dbd81cfa1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51338 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 234] 000469__8dbd81cfa1.jpg
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[M5-IN] 000471__eb7dafc79a.jpg merged=False
+INFO:     192.168.0.240:51344 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000471__eb7dafc79a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51345 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 235] 000471__eb7dafc79a.jpg
+[M5-IN] 000472__2568c3796d.jpg merged=False
+INFO:     192.168.0.240:51349 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000472__2568c3796d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51350 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 236] 000472__2568c3796d.jpg
+[M5-IN] 000473__93b58ea15e.jpg merged=False
+INFO:     192.168.0.240:51354 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000473__93b58ea15e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51355 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=flood sev=2 conf=1
+[PI_B 237] 000473__93b58ea15e.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000475__857c4ef30f.jpg merged=False
+INFO:     192.168.0.240:51361 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000475__857c4ef30f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51362 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 238] 000475__857c4ef30f.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+[M5-IN] 000476__79418b1983.jpg merged=False
+INFO:     192.168.0.240:51366 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000476__79418b1983.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51367 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 239] 000476__79418b1983.jpg
+[M5-IN] 000477__1a21fa25a2.jpg merged=False
+INFO:     192.168.0.240:51371 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000477__1a21fa25a2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51372 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 240] 000477__1a21fa25a2.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+  [RELOAD] model reloaded
+[M5-IN] 000479__c7e6aef542.jpg merged=False
+INFO:     192.168.0.240:51378 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000479__c7e6aef542.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51379 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 241] 000479__c7e6aef542.jpg
+[M5-IN] 000480__dc2acc32a1.jpg merged=False
+INFO:     192.168.0.240:51383 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000480__dc2acc32a1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51384 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 242] 000480__dc2acc32a1.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000481__1d62e82ece.jpg merged=False
+INFO:     192.168.0.240:51389 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000481__1d62e82ece.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51390 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 243] 000481__1d62e82ece.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=3
+[M5-IN] 000483__4e5f7dd66e.jpg merged=False
+INFO:     192.168.0.240:51396 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000483__4e5f7dd66e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51397 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 244] 000483__4e5f7dd66e.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000484__9405689eec.jpg merged=False
+INFO:     192.168.0.240:51401 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000484__9405689eec.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51402 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 245] 000484__9405689eec.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000487__ebab5ec693.jpg merged=False
+INFO:     192.168.0.240:51410 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000487__ebab5ec693.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51411 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 246] 000487__ebab5ec693.jpg
+         sent -> Pi_A | cat=hurricane sev=1 conf=1
+[M5-IN] 000488__c360f3bd62.jpg merged=False
+INFO:     192.168.0.240:51415 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000488__c360f3bd62.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51416 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 247] 000488__c360f3bd62.jpg
+[M5-IN] 000489__3b5e28c32b.jpg merged=False
+INFO:     192.168.0.240:51420 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000489__3b5e28c32b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51421 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 248] 000489__3b5e28c32b.jpg
+[M5-IN] 000490__c170dcaf3d.jpg merged=False
+INFO:     192.168.0.240:51425 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000490__c170dcaf3d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51426 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 249] 000490__c170dcaf3d.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000494__bdd6394da9.jpg merged=False
+INFO:     192.168.0.240:51436 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000494__bdd6394da9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51437 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 250] 000494__bdd6394da9.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000497__145201349a.jpg merged=False
+INFO:     192.168.0.240:51445 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000497__145201349a.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51446 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 251] 000497__145201349a.jpg
+[M5-IN] 000498__70e4dec2bf.jpg merged=False
+INFO:     192.168.0.240:51450 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000498__70e4dec2bf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51451 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 252] 000498__70e4dec2bf.jpg
+[M5-IN] 000500__6bc389c9be.jpg merged=False
+INFO:     192.168.0.240:51457 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000500__6bc389c9be.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51458 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 253] 000500__6bc389c9be.jpg
+[M5-IN] 000501__29f2f20cb2.jpg merged=False
+INFO:     192.168.0.240:51462 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000501__29f2f20cb2.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51463 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 254] 000501__29f2f20cb2.jpg
+[M5-IN] 000502__936b0f9d78.jpg merged=False
+INFO:     192.168.0.240:51467 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000502__936b0f9d78.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51468 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 255] 000502__936b0f9d78.jpg
+[M5-IN] 000503__678841497c.jpg merged=False
+INFO:     192.168.0.240:51472 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000503__678841497c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51473 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 256] 000503__678841497c.jpg
+[M5-IN] 000504__cf5277c077.jpg merged=False
+INFO:     192.168.0.240:51477 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000504__cf5277c077.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51478 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 257] 000504__cf5277c077.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000505__b9d4234ce1.jpg merged=False
+INFO:     192.168.0.240:51482 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000505__b9d4234ce1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51483 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 258] 000505__b9d4234ce1.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000507__bd3fa66eab.jpg merged=False
+INFO:     192.168.0.240:51489 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000507__bd3fa66eab.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51490 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 259] 000507__bd3fa66eab.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000509__18c1e76a71.jpg merged=False
+INFO:     192.168.0.240:51496 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000509__18c1e76a71.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51497 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 260] 000509__18c1e76a71.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+  [RELOAD] model reloaded
+[M5-IN] 000514__5af22ba9d5.jpg merged=False
+INFO:     192.168.0.240:51509 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000514__5af22ba9d5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51510 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 261] 000514__5af22ba9d5.jpg
+[M5-IN] 000515__abd04caa08.jpg merged=False
+INFO:     192.168.0.240:51514 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000515__abd04caa08.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51515 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 262] 000515__abd04caa08.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000518__1f977423b1.jpg merged=False
+INFO:     192.168.0.240:51523 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000518__1f977423b1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51524 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 263] 000518__1f977423b1.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000519__4c7d70e0c1.jpg merged=False
+INFO:     192.168.0.240:51528 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000519__4c7d70e0c1.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51529 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 264] 000519__4c7d70e0c1.jpg
+[M5-IN] 000520__ff82cb7694.jpg merged=False
+INFO:     192.168.0.240:51533 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000520__ff82cb7694.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51534 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 265] 000520__ff82cb7694.jpg
+[M5-IN] 000521__5eed4c63cf.jpg merged=False
+INFO:     192.168.0.240:51538 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000521__5eed4c63cf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51539 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 266] 000521__5eed4c63cf.jpg
+[M5-IN] 000522__fdf5cd3a07.jpg merged=False
+INFO:     192.168.0.240:51543 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000522__fdf5cd3a07.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51544 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 267] 000522__fdf5cd3a07.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000527__fb06798940.jpg merged=False
+INFO:     192.168.0.240:51556 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000527__fb06798940.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51557 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 268] 000527__fb06798940.jpg
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[M5-IN] 000530__02a96cb5c0.jpg merged=False
+INFO:     192.168.0.240:51565 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000530__02a96cb5c0.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51566 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 269] 000530__02a96cb5c0.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000531__d35f050846.jpg merged=False
+INFO:     192.168.0.240:51570 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000531__d35f050846.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51571 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 270] 000531__d35f050846.jpg
+[M5-IN] 000532__ca8eaa9e2f.jpg merged=False
+INFO:     192.168.0.240:51575 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000532__ca8eaa9e2f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51576 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 271] 000532__ca8eaa9e2f.jpg
+[M5-IN] 000533__644c4d10a5.jpg merged=False
+INFO:     192.168.0.240:51580 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000533__644c4d10a5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51581 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000534__c6bf2330f3.jpg merged=False
+INFO:     192.168.0.240:51585 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000534__c6bf2330f3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51586 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+[PI_B 272] 000533__644c4d10a5.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[PI_B 273] 000534__c6bf2330f3.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000538__9e240f8a46.jpg merged=False
+INFO:     192.168.0.240:51596 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000538__9e240f8a46.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51597 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 274] 000538__9e240f8a46.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000539__03cccd43f7.jpg merged=False
+INFO:     192.168.0.240:51601 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000539__03cccd43f7.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:51602 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 275] 000539__03cccd43f7.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000541__16fdf89eed.jpg merged=False
+INFO:     192.168.0.240:59827 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000541__16fdf89eed.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59828 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 276] 000541__16fdf89eed.jpg
+         sent -> Pi_A | cat=fire sev=2 conf=1
+[M5-IN] 000543__3b5711b6f5.jpg merged=False
+INFO:     192.168.0.240:59834 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000543__3b5711b6f5.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59835 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 277] 000543__3b5711b6f5.jpg
+         sent -> Pi_A | cat=fire sev=1 conf=1
+[M5-IN] 000545__160904047f.jpg merged=False
+INFO:     192.168.0.240:59841 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000545__160904047f.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59842 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 278] 000545__160904047f.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000547__7edbf3836c.jpg merged=False
+INFO:     192.168.0.240:59848 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000547__7edbf3836c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59849 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 279] 000547__7edbf3836c.jpg
+[M5-IN] 000548__af130ade6c.jpg merged=False
+INFO:     192.168.0.240:59853 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000548__af130ade6c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59854 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 280] 000548__af130ade6c.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+  [RELOAD] model reloaded
+[M5-IN] 000554__9f54ff22b6.jpg merged=False
+INFO:     192.168.0.240:59869 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000554__9f54ff22b6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59870 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 281] 000554__9f54ff22b6.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000556__fd00e6be6b.jpg merged=False
+INFO:     192.168.0.240:59876 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000556__fd00e6be6b.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59877 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 282] 000556__fd00e6be6b.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000561__93c9a57803.jpg merged=False
+INFO:     192.168.0.240:59889 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000561__93c9a57803.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59890 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 283] 000561__93c9a57803.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000564__65265adcd6.jpg merged=False
+INFO:     192.168.0.240:59898 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000564__65265adcd6.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59899 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 284] 000564__65265adcd6.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000566__e4e1600bcb.jpg merged=False
+INFO:     192.168.0.240:59905 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000566__e4e1600bcb.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59906 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 285] 000566__e4e1600bcb.jpg
+[M5-IN] 000567__df4e7016bf.jpg merged=False
+INFO:     192.168.0.240:59910 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000567__df4e7016bf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59911 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 286] 000567__df4e7016bf.jpg
+[M5-IN] 000568__02b062a27c.jpg merged=False
+INFO:     192.168.0.240:59915 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000568__02b062a27c.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:59916 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 287] 000568__02b062a27c.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000571__6ac288f467.jpg merged=False
+INFO:     192.168.0.240:56412 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000571__6ac288f467.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56413 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 288] 000571__6ac288f467.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000572__f7b3bcebaa.jpg merged=False
+INFO:     192.168.0.240:56417 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000572__f7b3bcebaa.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56418 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 289] 000572__f7b3bcebaa.jpg
+[M5-IN] 000573__8b3f7bfd60.jpg merged=False
+INFO:     192.168.0.240:56422 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000573__8b3f7bfd60.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56423 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 290] 000573__8b3f7bfd60.jpg
+[M5-IN] 000574__6aed819347.jpg merged=False
+INFO:     192.168.0.240:56427 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000574__6aed819347.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56428 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 291] 000574__6aed819347.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[M5-IN] 000576__905b58ab70.jpg merged=False
+INFO:     192.168.0.240:56434 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000576__905b58ab70.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56435 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 292] 000576__905b58ab70.jpg
+[M5-IN] 000577__539b1a2e29.jpg merged=False
+INFO:     192.168.0.240:56439 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000577__539b1a2e29.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56440 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 293] 000577__539b1a2e29.jpg
+[M5-IN] 000578__2f19a629fd.jpg merged=False
+INFO:     192.168.0.240:56444 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000578__2f19a629fd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56445 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=2
+[PI_B 294] 000578__2f19a629fd.jpg
+[M5-IN] 000579__65414e8478.jpg merged=False
+INFO:     192.168.0.240:56449 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000579__65414e8478.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56450 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 295] 000579__65414e8478.jpg
+[M5-IN] 000580__553a53ed64.jpg merged=False
+INFO:     192.168.0.240:56454 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000580__553a53ed64.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56455 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 296] 000580__553a53ed64.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000586__0934d44260.jpg merged=False
+INFO:     192.168.0.240:56469 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000586__0934d44260.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56470 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 297] 000586__0934d44260.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000591__b924dcdb94.jpg merged=False
+INFO:     192.168.0.240:56482 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000591__b924dcdb94.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56483 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 298] 000591__b924dcdb94.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000598__c2fe581e02.jpg merged=False
+INFO:     192.168.0.240:56499 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000598__c2fe581e02.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:56500 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 299] 000598__c2fe581e02.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=4
+INFO:     192.168.0.203:59255 - "GET /online_status HTTP/1.1" 200 OK
+[M5-IN] 000026__e4647a507d.jpg merged=False
+INFO:     192.168.0.240:55784 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000026__e4647a507d.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:55785 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 300] 000026__e4647a507d.jpg
+[M5-IN] 000027__46aa633c5e.jpg merged=False
+INFO:     192.168.0.240:55789 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000027__46aa633c5e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:55790 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+  [RELOAD] model reloaded
+[PI_B 301] 000027__46aa633c5e.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000028__ab7be98280.jpg merged=False
+INFO:     192.168.0.240:52056 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000028__ab7be98280.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52057 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 302] 000028__ab7be98280.jpg
+         sent -> Pi_A | cat=other_disaster sev=2 conf=1
+[M5-IN] 000031__a573979f87.jpg merged=False
+INFO:     192.168.0.240:52065 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000031__a573979f87.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52066 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 303] 000031__a573979f87.jpg
+[M5-IN] 000032__1483b9e066.jpg merged=False
+INFO:     192.168.0.240:52070 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000032__1483b9e066.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52071 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000033__c47fc53d99.jpg merged=False
+INFO:     192.168.0.240:52075 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000033__c47fc53d99.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52076 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 304] 000032__1483b9e066.jpg
+         sent -> Pi_A | cat=landslide sev=2 conf=1
+[PI_B 305] 000033__c47fc53d99.jpg
+[M5-IN] 000127__003b51c543.jpg merged=False
+INFO:     192.168.0.240:52084 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000127__003b51c543.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52085 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=landslide sev=1 conf=1
+[PI_B 306] 000127__003b51c543.jpg
+[M5-IN] 000129__d01c791e5e.jpg merged=False
+INFO:     192.168.0.240:52091 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000129__d01c791e5e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52092 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 307] 000129__d01c791e5e.jpg
+[M5-IN] 000131__67dea02944.jpg merged=False
+INFO:     192.168.0.240:52098 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000131__67dea02944.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52099 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=flood sev=1 conf=1
+[PI_B 308] 000131__67dea02944.jpg
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[M5-IN] 000136__d3cecc5db3.jpg merged=False
+INFO:     192.168.0.240:52111 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000136__d3cecc5db3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52112 - "POST /patch_e2e HTTP/1.1" 200 OK
+[PI_B 309] 000136__d3cecc5db3.jpg
+[M5-IN] 000137__3b459b8ddf.jpg merged=False
+INFO:     192.168.0.240:52116 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000137__3b459b8ddf.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52117 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000138__fc8f008b9e.jpg merged=False
+INFO:     192.168.0.240:52121 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000138__fc8f008b9e.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52122 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 310] 000137__3b459b8ddf.jpg
+[M5-IN] 000152__48919c3fcd.jpg merged=False
+INFO:     192.168.0.240:52128 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000152__48919c3fcd.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52129 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=3
+[PI_B 311] 000138__fc8f008b9e.jpg
+[M5-IN] 000153__e952d65512.jpg merged=False
+INFO:     192.168.0.240:52133 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000153__e952d65512.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52134 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000154__1256c63b58.jpg merged=False
+INFO:     192.168.0.240:52138 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000154__1256c63b58.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52139 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=earthquake sev=1 conf=1
+[PI_B 312] 000152__48919c3fcd.jpg
+[M5-IN] 000306__6f61128f89.jpg merged=False
+INFO:     192.168.0.240:52145 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000306__6f61128f89.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52146 - "POST /patch_e2e HTTP/1.1" 200 OK
+         sent -> Pi_A | cat=other_disaster sev=1 conf=1
+[PI_B 313] 000153__e952d65512.jpg
+         sent -> Pi_A | cat=earthquake sev=2 conf=1
+[PI_B 314] 000154__1256c63b58.jpg
+[M5-IN] 000310__c058e9deb9.jpg merged=False
+INFO:     192.168.0.240:52156 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000310__c058e9deb9.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52157 - "POST /patch_e2e HTTP/1.1" 200 OK
+[M5-IN] 000311__6cc91597e3.jpg merged=False
+INFO:     192.168.0.240:52161 - "POST /ingest_m5 HTTP/1.1" 200 OK
+[M5-MERGED] 000311__6cc91597e3.jpg -> tier2_eidseg_runtime_b/merged_oracle__eidseg_runtime600.jsonl
+INFO:     192.168.0.240:52162 - "POST /patch_e2e HTTP/1.1" 200 OK
