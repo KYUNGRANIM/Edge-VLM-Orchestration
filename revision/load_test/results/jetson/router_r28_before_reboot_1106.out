@@ -1,0 +1,32 @@
+INFO:     Started server process [89423]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[JETSON-ONLINE] save_dir=tier3_r28_load
+[JETSON-ONLINE] out=tier3_r28_load/online_jetson_results.jsonl
+[JETSON-ONLINE] vllm=http://127.0.0.1:9000/v1/chat/completions model=Qwen/Qwen2.5-VL-3B-Instruct
+[JETSON-ONLINE] decode temperature=0.3 seed=42 no_top_k_top_p=1
+INFO:     127.0.0.1:43430 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39964 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.0.203:52375 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:47076 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:56604 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:40734 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:35780 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:59970 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+  [RETRY] timeout at dim=768, retry smaller
+  [RETRY] timeout at dim=640, retry smaller
+  [RETRY] timeout at dim=512, retry smaller
+INFO:     192.168.0.60:32888 - "POST /ingest_pi_a HTTP/1.1" 500 Internal Server Error
+  [RETRY] timeout at dim=768, retry smaller
+  [RETRY] timeout at dim=640, retry smaller
+  [RETRY] timeout at dim=512, retry smaller
+INFO:     192.168.0.60:43434 - "POST /ingest_pi_a HTTP/1.1" 500 Internal Server Error
+  [RETRY] timeout at dim=768, retry smaller
+  [RETRY] timeout at dim=640, retry smaller
+  [RETRY] timeout at dim=512, retry smaller
+INFO:     192.168.0.60:43938 - "POST /ingest_pi_a HTTP/1.1" 500 Internal Server Error
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [89423]

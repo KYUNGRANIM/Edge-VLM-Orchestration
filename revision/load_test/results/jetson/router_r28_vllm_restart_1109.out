@@ -1,0 +1,18 @@
+INFO:     Started server process [8016]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[JETSON-ONLINE] save_dir=tier3_r28_load
+[JETSON-ONLINE] out=tier3_r28_load/online_jetson_results.jsonl
+[JETSON-ONLINE] vllm=http://127.0.0.1:9000/v1/chat/completions model=Qwen/Qwen2.5-VL-3B-Instruct
+[JETSON-ONLINE] decode temperature=0.3 seed=42 no_top_k_top_p=1
+INFO:     192.168.0.23:53025 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53028 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53034 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53068 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53071 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53073 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8016]

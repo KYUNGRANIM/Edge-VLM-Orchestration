@@ -1,0 +1,19 @@
+rep 3: 60 images {'m5_a': 30, 'pi_a': 16, 'jetson': 14}, methods ['ours', 'direct_pi', 'direct_jetson'], k [1, 2, 4]
+  ours k=1: {'m5_end': 30, 'pi': 30}
+  ours k=1: 30 requests in 25.9 min
+  ours k=2: {'m5_end': 30, 'pi': 30}
+  ours k=2: 30 requests in 26.0 min
+  ours k=4: {'m5_end': 30, 'pi': 30}
+  ours k=4: 30 requests in 26.0 min
+  direct_pi k=1: {'pi': 60}
+  direct_pi k=1: 60 requests in 50.9 min
+  direct_pi k=2: {'pi': 60}
+  direct_pi k=2: 60 requests in 49.6 min
+  direct_pi k=4: {'pi': 60}
+  direct_pi k=4: 60 requests in 49.5 min
+  direct_jetson k=1: {'jetson': 60}
+  direct_jetson k=1: 60 requests in 10.3 min
+  direct_jetson k=2: {'jetson': 60}
+  direct_jetson k=2: 60 requests in 10.2 min
+  direct_jetson k=4: {'jetson': 60}
+  direct_jetson k=4: 60 requests in 10.2 min

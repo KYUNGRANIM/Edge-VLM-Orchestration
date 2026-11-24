@@ -1,0 +1,2 @@
+rep 1: 60 images {'m5_a': 30, 'pi_a': 16, 'jetson': 14}, methods ['ours', 'direct_pi', 'direct_jetson'], k [1, 2, 4]
+  ours k=1: {'m5_end': 30, 'pi': 30}

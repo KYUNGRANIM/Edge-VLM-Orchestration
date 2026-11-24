@@ -1,0 +1,67 @@
+INFO:     Started server process [3096]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[JETSON-ONLINE] save_dir=tier3_r28_load
+[JETSON-ONLINE] out=tier3_r28_load/online_jetson_results.jsonl
+[JETSON-ONLINE] vllm=http://127.0.0.1:9000/v1/chat/completions model=Qwen/Qwen2.5-VL-3B-Instruct
+[JETSON-ONLINE] decode temperature=0.3 seed=42 no_top_k_top_p=1
+INFO:     192.168.0.23:53912 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53915 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53917 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53922 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53925 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53928 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53932 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53935 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53937 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53940 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53945 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:53950 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:48708 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:46446 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:33276 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:57196 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:39816 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:39254 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:43370 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:54368 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:48184 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:36028 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:49768 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:37646 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:37970 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:34818 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:35772 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:58154 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:47394 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:36634 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:59488 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:41382 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:46106 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:58848 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:35810 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:42352 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:33570 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:38138 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:59496 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:39182 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:43480 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:54394 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:47262 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:48840 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:37610 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:50232 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:32984 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:34850 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:39000 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:33584 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:42332 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:38888 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:52376 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.60:57100 - "POST /ingest_pi_a HTTP/1.1" 200 OK
+INFO:     192.168.0.23:50279 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3096]
