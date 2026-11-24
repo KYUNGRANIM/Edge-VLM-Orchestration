@@ -208,7 +208,7 @@ def main():
           f"(possible second attempt = backup adopted); wording marker of those: "
           f"{dict(Counter(marker(run[i]['m5']['m5_a']['text'], 'a') for i in flag))} (+1 primary-like, -1 backup-like)")
     store = defaultdict(list)
-    for f in glob.glob(str(RUN / "m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "m5a_sd*/*.extracted.jsonl")):
+    for f in glob.glob(str(RUN / "device_logs/m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "device_logs/m5a_sd*/*.extracted.jsonl")):
         for d in jl(f):
             if d.get("event") == "store" and d.get("role") in ("b", "c"):
                 store[(d["role"], d["image_id"], d.get("text"))].append(d.get("m5_total_ms") or 0)

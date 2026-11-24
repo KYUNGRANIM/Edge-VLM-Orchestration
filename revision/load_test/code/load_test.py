@@ -205,10 +205,10 @@ def main():
     a = ap.parse_args()
     RUN_ID = a.run_id
     run = {r["image_id"]: r for r in jl(RUN / "online_routing_final.jsonl")}
-    raw_a = {r["image_id"]: r for r in jl(RUN / "pi_a/raw_ingest__medic_rerun600.jsonl")}
-    raw_b = {r["image_id"]: r for r in jl(RUN / "pi_b/raw_ingest__medic_rerun600.jsonl")}
-    patch_a = {r["image_id"]: r for r in jl(RUN / "pi_a/oracle_patch__medic_rerun600.jsonl")}
-    patch_b = {r["image_id"]: r for r in jl(RUN / "pi_b/oracle_patch__medic_rerun600.jsonl")}
+    raw_a = {r["image_id"]: r for r in jl(RUN / "device_logs/pi_a/raw_ingest__medic_rerun600.jsonl")}
+    raw_b = {r["image_id"]: r for r in jl(RUN / "device_logs/pi_b/raw_ingest__medic_rerun600.jsonl")}
+    patch_a = {r["image_id"]: r for r in jl(RUN / "device_logs/pi_a/oracle_patch__medic_rerun600.jsonl")}
+    patch_b = {r["image_id"]: r for r in jl(RUN / "device_logs/pi_b/oracle_patch__medic_rerun600.jsonl")}
     paths = {p.name: p for p in IMAGE_ROOT.rglob("*.jpg") if not p.name.startswith("._")}
     ids = choose_images(run)
     order = list(ids)

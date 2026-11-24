@@ -198,7 +198,7 @@ cl = [pib_class(r["pi_b"]["text"], r["pi_b"]["conf_detail"]["semantic_penalty"],
       for r in prof_pi if r["pi_b"].get("conf_detail")]
 print(f"  profiling Pi_B: {dict(Counter(cl))} (no conf_detail: {sum(not r['pi_b'].get('conf_detail') for r in prof_pi)})")
 run = by_id(r for r in jl(RUN / "online_routing_final.jsonl") if r.get("type") == "online_routing_final")
-pbn = by_id(jl(RUN / "pi_b/online_pi_b_results.jsonl"))
+pbn = by_id(jl(RUN / "device_logs/pi_b/online_pi_b_results.jsonl"))
 esc = [i for i in sorted(run) if run[i].get("end_pi")]
 assert all(run[i]["end_pi"]["cost"]["latency_ms"]["pi_b_total_ms"] == pbn[i]["pi_b_cost"]["latency_ms"]["pi_b_total_ms"] for i in esc)
 dbg = [pbn[i]["pi_b_debug"] for i in esc]
@@ -250,18 +250,18 @@ lists = [[x.strip() for x in open(RUN / f) if x.strip()]
 print(f"  image-level M5 re-run rounds {[len(v) for v in lists]} -> {sum(map(len, lists))} re-runs of "
       f"{len({x for v in lists for x in v})} images")
 every = Counter()                                 # all rounds, all three M5s (retry folders start with the id list)
-for f in glob.glob(str(RUN / "m5*_sd*/failed_ids.jsonl")):
+for f in glob.glob(str(RUN / "device_logs/m5*_sd*/failed_ids.jsonl")):
     every.update(r.get("reason") for r in jl(f, ok_only=False) if r.get("reason"))
 for dev in "abc":
-    reasons = Counter(r.get("reason") for r in jl(RUN / f"m5{dev}_sd/failed_ids.jsonl", ok_only=False) if r.get("reason"))
+    reasons = Counter(r.get("reason") for r in jl(RUN / f"device_logs/m5{dev}_sd/failed_ids.jsonl", ok_only=False) if r.get("reason"))
     print(f"    M5_{dev.upper()} main-round failure log: {dict(reasons.most_common(6))}")
 print(f"    all rounds, all M5s: {dict(every.most_common(7))}")
-wd = {f: Counter(json.loads(x).get("kind") for x in open(RUN / "watchdog" / f) if x.strip())
+wd = {f: Counter(json.loads(x).get("kind") for x in open(RUN / "device_logs/watchdog" / f) if x.strip())
       for f in ("watchdog_medic_events_a.jsonl", "watchdog_medic_events_bc.jsonl")}
 print(f"    watchdog power cycles: M5_A {wd['watchdog_medic_events_a.jsonl']['cycle']}, M5_B/C {wd['watchdog_medic_events_bc.jsonl']['cycle']}")
 res = {i for i in ids if run[i].get("jetson_answer_source") == "resent_after_run"}
 log = jl(RUN / "jetson_resend_log.jsonl")
-srv = jl(RUN / "jetson/online_jetson_results.jsonl", ok_only=False)
+srv = jl(RUN / "device_logs/jetson/online_jetson_results.jsonl", ok_only=False)
 pre = [r for r in srv if r["image_id"] in res and r["ts"] < "2026-11-04T18:50"]
 pre_ok = [r["end_jetson"]["cost"]["latency_ms"]["jetson_wall_ms"] / 1000 for r in pre if r["status"] == "ok"]
 print(f"  Jetson-routed {sum(lab[i] == 'jetson' for i in ids)}; answer re-sent after the run {len(res)} "
@@ -290,7 +290,7 @@ dl, _, dj = TABLE1["Direct@Jetson"]
 print(f"      same fault rate ({100 * rate:.0f}% of Jetson calls, 60 s each) on Direct@Jetson: {dl + rate * 60:.1f} s, "
       f"{dj + rate * 60 * P_JET:.1f} J")
 aux = defaultdict(list)                          # M5_B/C times as results_table.py reads them
-for f in glob.glob(str(RUN / "m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "m5a_sd*/*.extracted.jsonl")):
+for f in glob.glob(str(RUN / "device_logs/m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "device_logs/m5a_sd*/*.extracted.jsonl")):
     for d in jl(f, ok_only=False):
         ms = d.get("m5_total_ms") or (d.get("latency") or {}).get("m5_total_ms") or 0
         if d.get("event") == "store" and d.get("role") in ("b", "c") and ms > 0:

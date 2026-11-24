@@ -64,7 +64,7 @@ assert all(abs(Q["all-tier"][i][t] - ref[i]["quality"][t]) < 1e-6 for i in ids f
 
 # ---- auxiliary execution measured in this run
 aux_ms = {"b": [], "c": []}
-for f in glob.glob(str(RUN / "m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "m5a_sd*/*.extracted.jsonl")):
+for f in glob.glob(str(RUN / "device_logs/m5a_sd*/m5a_aux_cache__*.jsonl")) + glob.glob(str(RUN / "device_logs/m5a_sd*/*.extracted.jsonl")):
     for line in open(f, encoding="utf-8", errors="replace"):
         try:
             d = json.loads(line)

@@ -64,6 +64,8 @@ whose items appear in a different order, and the column widths of one table.
 | Renamed the human-rating files to `rater00_author` and `rater01`–`rater09`, keeping their order. The rating site's user and page identifiers were removed; the scores are unchanged. | `revision/human_evaluation/ratings/` |
 | Updated the generator's path in the first comment line of the generated router code. | `deployment/m5_firmware/router_policy.cpp`, `revision/eidseg/runtime/firmware/router_policy.cpp` |
 | Removed the router BSSID and network name; the optional setting is commented out. | `platformio.ini` |
+| Grouped the analysis scripts into topic folders, and the live run's raw device logs into one folder. | `analysis/`, `deployment/live_run/device_logs/` |
+| Removed 15 log files of the live run that no script reads (judge and watchdog text logs, and the inputs and logs of the re-scoring run). | `deployment/` |
 | Removed: internal drafts and notes, the first submission's notebook and figures (the revised article no longer uses their numbers), an exploratory script whose results are not reported, a superseded collection file, a corrupted SD-card log, and the dataset images. | — |
 
 ## Not re-run

@@ -170,7 +170,7 @@ repair = {}
 for p in sorted(glob.glob(str(M5VLM / "profiling/results/raw_per_category/jetson_*.jsonl"))):
     for o in load(p):
         repair["profiling", o["image_id"]] = o["end_jetson"]["repair"]
-for o in load(FINAL / "jetson/online_jetson_results.jsonl"):
+for o in load(FINAL / "device_logs/jetson/online_jetson_results.jsonl"):
     if o["status"] == "ok":
         repair["final run", o["image_id"]] = o["end_jetson"]["repair"]  # the latest ok row is the one kept
 recs = [("profiling", r["image_id"], r["jetson"], r["jet_conf_detail"]) for r in load(PROFILING)]
