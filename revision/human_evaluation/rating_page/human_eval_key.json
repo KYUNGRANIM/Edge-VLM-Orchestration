@@ -1,0 +1,506 @@
+{
+ "seed": 2026,
+ "judge_scores": "online/results/judge/2gpt_judge_scores_online_result_v2.jsonl",
+ "key": {
+  "910179107568324609_0__6ae837207f.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "870845845133971456_1__b7c8bf5fc0.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000358__522bab9845.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "598523640636923904_0__3bf3bf550f.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "907411740639588352_0__6fa3d93fd4.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "593787535978934273_0__361c59be76.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "000225__81ce5ea0f6.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "wreckedcar_2017-06-13_23-00-09__a446406ada.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "909799091080765440_0__841ba1c941.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_21581__bf7db84f93.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "nepal_eq_severe_im_31195__4a22d3402c.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "floodwater_2017-08-27_20-23-14__6ee5ae5141.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "wreckedcar_2017-03-16_02-08-32__a30b2ed955.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "wreckedcar_2017-09-19_08-42-18__8fb3852bcf.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "terrorattack_2017-10-14_18-29-50__7d53fc0a16.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "908522243759669248_0__238c148b9e.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "nepal_eq_none_im_32552__2b7bc964a9.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "000378__3d23b41eb3.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_9812__b9c0d887b0.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "000549__9faca43d5f.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "bridge_damage_1832__0fdd25c33c.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "910184650307280896_0__b06c1ae49b.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "973303193831661568_0__cc89f3621c.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "ruby_typhoon_mild_im_5583__5ec746619b.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "buildingcollapse_2017-01-15_04-26-12__a658997d5d.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "920528819626434561_0__accd28ee20.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "1021701097424007169_0__1e8d39cf6d.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "904661779145515009_0__5b1380b430.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "nepal_eq_severe_im_24986__02f91237cc.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "912117444327673856_0__8d5a160954.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "921430152189530112_0__1abf285856.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "907237196435881989_0__4f8bad9d3a.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "905796606796197888_0__f34dc39550.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_14624__5bb2214aff.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "buildingcollapse_2015-03-27_00-49-20__4ec2bcfee6.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_14684__ed72979f9c.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "nepal_eq_none_im_13095__d89d348153.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "596706591216259072_2__b79e4720c4.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "917835123890049025_0__9369388002.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "918082606545039360_0__e83b18e013.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "buildingfire_2017-10-25_18-38-13__901b6f7b02.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "965282040986980352_2__abd1b8675b.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "destruction_2017-10-30_10-49-31__b4ad8829db.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "sandydamage_2014-12-02_14-41-47__e7a12563d4.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "wreckedcar_2017-09-21_04-03-20__fe14e35e8b.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "hurricaneirma_2017-11-16_18-31-21__1ff397784a.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000389__752649d5c3.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "yemencrisis_2016-03-15_20-34-04__03c36568c8.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "921117203914637312_0__bbbc98e444.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000509__b444fefb7d.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "908111834418466816_1__4ecef11ac0.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "922878599232974848_0__d2277fc396.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "forrestfire_2016-05-05_04-27-08__f7f9ac11b0.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "nepal_eq_severe_im_15736__1481a687b5.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000476__c75a55e9e9.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "910985291883794432_0__25898404b6.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "road_damage_1858__becc9fee8c.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "673000241247858688_0__102c177a6b.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "909738182031413248_1__cdd7e630d0.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "000064__195040c88f.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "disasters_2017-11-06_16-03-24__923df62903.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "922183354367307776_0__64489f8564.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "000459__cb04d4127f.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000651__f692c893de.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "905566812460523520_0__663e4a26e6.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "907068687722655744_0__1275da144a.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "destroyedbuilding_2012-02-27_22-38-09__df9c206789.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "911575707024859136_3__6a9c0b6349.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "923612432324616192_0__228cdb177a.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "910547919278919680_0__c5fa427727.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "673032861872623616_2__6b5ca11096.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "nepal_eq_none_im_13501__469efcfb4e.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "forrestfire_2017-06-23_08-25-59__fcd49400f5.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "buildingcollapse_2016-12-04_02-19-03__66ffcd3d29.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "000514__b6309a9f3b.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "road_damage_376__2c02c26028.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "building_damage_1796__996c4e11f3.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "976758010826641408_0__1c6123e58c.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "912350540763484161_0__527ee8aea6.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "nepal_eq_severe_im_19211__fc7cb4d239.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "910207622896287744_3__5659ed6770.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_42265__e3a43d87f2.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "917924564579028992_0__2f7cf34ca7.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "road_damage_1421__36ab73b224.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "905636875905507328_0__dcab019fba.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_14109__9f3dcc8665.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "nepal_eq_severe_im_35331__9b412b438c.jpg": {
+   "A": "jetson",
+   "B": "m5_a",
+   "C": "pi_a"
+  },
+  "979753754881904640_0__9116a20f1e.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "976365594374127617_0__1db5450f2f.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "ruby_typhoon_mild_im_4064__ce3cbf2e05.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "000012__815422b81f.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "road_damage_2950__c18df94e32.jpg": {
+   "A": "pi_a",
+   "B": "jetson",
+   "C": "m5_a"
+  },
+  "ecuador_eq_mild_im_1044__adb4829326.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000637__9ce7f9263e.jpg": {
+   "A": "m5_a",
+   "B": "pi_a",
+   "C": "jetson"
+  },
+  "1021735328237924352_0__ad40a932c8.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "921364144191954945_0__c97c59cc46.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  },
+  "forrestfire_2017-05-20_00-37-22__ed3341d86e.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "nepal_eq_mild_im_29148__06ed01c270.jpg": {
+   "A": "m5_a",
+   "B": "jetson",
+   "C": "pi_a"
+  },
+  "904370967182319616_0__fb586e0cb6.jpg": {
+   "A": "jetson",
+   "B": "pi_a",
+   "C": "m5_a"
+  },
+  "000529__c3a5683ade.jpg": {
+   "A": "pi_a",
+   "B": "m5_a",
+   "C": "jetson"
+  }
+ }
+}

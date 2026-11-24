@@ -1,0 +1,68 @@
+snapshots served: [('gpt-4o-2024-08-06', 'fp_936db6157f'), ('gpt-4o-2024-08-06', 'fp_f89046aead')]
+
+################ earlier GPT scores
+=== judge validation: 9 raters x 60 images x 3 answers = 1620 human ratings
+Q-Sat kappa  GPT vs each rater: mean 0.69 (range 0.56-0.78) | rater vs rater: mean 0.68 (range 0.56-0.86)
+text Spearman GPT vs each rater: mean 0.44 (range 0.28-0.55) | rater vs rater: mean 0.45 (range 0.29-0.57)
+median of 9 raters vs GPT: Q-Sat agreement 88.3%, kappa 0.77, text Spearman 0.60
+  m5_a   GPT minus human text score: vs median -0.008 [-0.041, +0.025] | vs rater mean +0.022 [-0.012, +0.053] | raters with GPT higher: 5/9 | words 36
+  pi_a   GPT minus human text score: vs median +0.017 [-0.040, +0.070] | vs rater mean +0.027 [-0.030, +0.084] | raters with GPT higher: 5/9 | words 34
+  jetson GPT minus human text score: vs median +0.096 [+0.049, +0.147] | vs rater mean +0.129 [+0.082, +0.177] | raters with GPT higher: 9/9 | words 34
+length: corr(words, GPT minus median) -0.08 over all answers; within tier m5_a -0.15, pi_a -0.15, jetson +0.14
+per criterion, median vs GPT, quadratic-weighted kappa: damage_grounding 0.69, damage_overclaim 0.54, response_appropriateness 0.69, response_operationality 0.58, response_target_alignment 0.65
+
+=== Q-Sat (%) on the 60 human-rated images, rerun routes, all-tier answers
+                        GPT-4o   median of 9
+Fixed@M5                  40.0          48.3
+Fixed@Pi                  56.7          48.3
+Fixed@Jetson              70.0          58.3
+Conf-Only(4,4)            60.0          58.3
+Ours                      50.0          46.7
+Primary-Only              45.0          43.3
+
+
+raw Q-Sat agreement: GPT vs each rater mean 84.7% | rater vs rater 83.9% | GPT vs median 88.3%
+tie-aware Spearman (text): GPT vs each rater mean 0.46 | rater vs rater 0.47 | GPT vs median 0.61
+
+################ re-scored, gpt-4o-2024-08-06
+=== judge validation: 9 raters x 60 images x 3 answers = 1620 human ratings
+Q-Sat kappa  GPT vs each rater: mean 0.70 (range 0.56-0.78) | rater vs rater: mean 0.68 (range 0.56-0.86)
+text Spearman GPT vs each rater: mean 0.45 (range 0.30-0.56) | rater vs rater: mean 0.45 (range 0.29-0.57)
+median of 9 raters vs GPT: Q-Sat agreement 88.3%, kappa 0.77, text Spearman 0.62
+  m5_a   GPT minus human text score: vs median -0.011 [-0.044, +0.022] | vs rater mean +0.019 [-0.016, +0.051] | raters with GPT higher: 5/9 | words 36
+  pi_a   GPT minus human text score: vs median +0.023 [-0.029, +0.072] | vs rater mean +0.033 [-0.021, +0.087] | raters with GPT higher: 5/9 | words 34
+  jetson GPT minus human text score: vs median +0.107 [+0.062, +0.152] | vs rater mean +0.141 [+0.098, +0.186] | raters with GPT higher: 9/9 | words 34
+length: corr(words, GPT minus median) -0.08 over all answers; within tier m5_a -0.13, pi_a -0.14, jetson +0.13
+per criterion, median vs GPT, quadratic-weighted kappa: damage_grounding 0.70, damage_overclaim 0.61, response_appropriateness 0.71, response_operationality 0.61, response_target_alignment 0.67
+
+=== Q-Sat (%) on the 60 human-rated images, rerun routes, all-tier answers
+                        GPT-4o   median of 9
+Fixed@M5                  38.3          48.3
+Fixed@Pi                  58.3          48.3
+Fixed@Jetson              70.0          58.3
+Conf-Only(4,4)            58.3          58.3
+Ours                      50.0          46.7
+Primary-Only              45.0          43.3
+
+
+raw Q-Sat agreement: GPT vs each rater mean 85.2% | rater vs rater 83.9% | GPT vs median 88.3%
+tie-aware Spearman (text): GPT vs each rater mean 0.46 | rater vs rater 0.47 | GPT vs median 0.62
+
+=== earlier vs re-scored GPT, same 180 answers
+Q-Sat agreement 98.9%, kappa 0.98, text Spearman 0.96, mean |diff| 0.030
+  m5_a   mean text earlier 0.694 -> re-scored 0.691
+  pi_a   mean text earlier 0.648 -> re-scored 0.654
+  jetson mean text earlier 0.780 -> re-scored 0.791
+
+=== Q-Sat (%) on the 60 human-rated images by scorer (rerun routes, rated answers)
+                    GPT earlier  GPT re-scored    median of 9     rater mean
+Fixed@M5                   40.0           38.3           48.3           43.1
+Fixed@Pi                   56.7           58.3           48.3           50.4
+Fixed@Jetson               70.0           70.0           58.3           59.4
+Conf-Only(4,4)             60.0           58.3           58.3           56.7
+Ours                       50.0           50.0           46.7           48.1
+Primary-Only               45.0           45.0           43.3           45.7
+order under GPT earlier   : Fixed@Jetson 70.0 > Conf-Only(4,4) 60.0 > Fixed@Pi 56.7 > Ours 50.0 > Primary-Only 45.0 > Fixed@M5 40.0
+order under GPT re-scored : Fixed@Jetson 70.0 > Fixed@Pi 58.3 > Conf-Only(4,4) 58.3 > Ours 50.0 > Primary-Only 45.0 > Fixed@M5 38.3
+order under median of 9   : Fixed@Jetson 58.3 > Conf-Only(4,4) 58.3 > Fixed@M5 48.3 > Fixed@Pi 48.3 > Ours 46.7 > Primary-Only 43.3
+order under rater mean    : Fixed@Jetson 59.4 > Conf-Only(4,4) 56.7 > Fixed@Pi 50.4 > Ours 48.1 > Primary-Only 45.7 > Fixed@M5 43.1
