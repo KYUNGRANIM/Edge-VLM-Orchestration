@@ -1,0 +1,46 @@
+|--- cat__pib_cat_other_disaster <= 0.5000
+|   |--- num__m5_conf_mean <= 0.9279
+|   |   |--- num__pib_sev <= -0.1104
+|   |   |   |--- cat__pib_cat_landslide <= 0.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__pib_cat_landslide >  0.5000
+|   |   |   |   |--- class: 1
+|   |   |--- num__pib_sev >  -0.1104
+|   |   |   |--- cat__pib_cat_flood <= 0.5000
+|   |   |   |   |--- class: 1
+|   |   |   |--- cat__pib_cat_flood >  0.5000
+|   |   |   |   |--- class: 0
+|   |--- num__m5_conf_mean >  0.9279
+|   |   |--- cat__pib_cat_landslide <= 0.5000
+|   |   |   |--- num__m5a_pib_sev_diff <= -0.7156
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5a_pib_sev_diff >  -0.7156
+|   |   |   |   |--- class: 1
+|   |   |--- cat__pib_cat_landslide >  0.5000
+|   |   |   |--- num__pib_min_logprob <= 0.3584
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pib_min_logprob >  0.3584
+|   |   |   |   |--- class: 1
+|--- cat__pib_cat_other_disaster >  0.5000
+|   |--- num__m5_conf_min <= -0.0961
+|   |   |--- num__pib_min_logprob <= -0.2719
+|   |   |   |--- num__pib_conf <= 1.2040
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pib_conf >  1.2040
+|   |   |   |   |--- class: 1
+|   |   |--- num__pib_min_logprob >  -0.2719
+|   |   |   |--- cat__m5a_cat_other_disaster <= 0.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__m5a_cat_other_disaster >  0.5000
+|   |   |   |   |--- class: 0
+|   |--- num__m5_conf_min >  -0.0961
+|   |   |--- num__m5a_pib_sev_diff <= 0.6869
+|   |   |   |--- num__pib_min_logprob <= 0.8836
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pib_min_logprob >  0.8836
+|   |   |   |   |--- class: 1
+|   |   |--- num__m5a_pib_sev_diff >  0.6869
+|   |   |   |--- num__pib_conf <= 0.1232
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pib_conf >  0.1232
+|   |   |   |   |--- class: 0

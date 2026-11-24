@@ -1,0 +1,46 @@
+|--- num__pia_sev <= -0.5051
+|   |--- cat__pia_cat_landslide <= 0.5000
+|   |   |--- num__pi_cat_match <= -0.4616
+|   |   |   |--- num__pi_conf_mean <= 0.8742
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pi_conf_mean >  0.8742
+|   |   |   |   |--- class: 0
+|   |   |--- num__pi_cat_match >  -0.4616
+|   |   |   |--- num__m5a_pia_cat_match <= -0.1911
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5a_pia_cat_match >  -0.1911
+|   |   |   |   |--- class: 0
+|   |--- cat__pia_cat_landslide >  0.5000
+|   |   |--- num__pi_cat_match <= -0.4616
+|   |   |   |--- num__m5_cat_agree <= 0.3245
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_cat_agree >  0.3245
+|   |   |   |   |--- class: 1
+|   |   |--- num__pi_cat_match >  -0.4616
+|   |   |   |--- num__pi_conf_mean <= 0.8742
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pi_conf_mean >  0.8742
+|   |   |   |   |--- class: 0
+|--- num__pia_sev >  -0.5051
+|   |--- num__pi_cat_match <= -0.4616
+|   |   |--- cat__pia_cat_hurricane <= 0.5000
+|   |   |   |--- num__m5_conf_mean <= 0.2821
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_mean >  0.2821
+|   |   |   |   |--- class: 0
+|   |   |--- cat__pia_cat_hurricane >  0.5000
+|   |   |   |--- num__pi_sev_match <= -0.2129
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pi_sev_match >  -0.2129
+|   |   |   |   |--- class: 1
+|   |--- num__pi_cat_match >  -0.4616
+|   |   |--- cat__pia_cat_other_disaster <= 0.5000
+|   |   |   |--- num__pi_sev_match <= -0.2129
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pi_sev_match >  -0.2129
+|   |   |   |   |--- class: 1
+|   |   |--- cat__pia_cat_other_disaster >  0.5000
+|   |   |   |--- num__m5_conf_min <= -0.0961
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_min >  -0.0961
+|   |   |   |   |--- class: 1
