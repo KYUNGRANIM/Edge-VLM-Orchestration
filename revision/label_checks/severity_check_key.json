@@ -1,0 +1,725 @@
+{
+ "seed": 2027,
+ "key": {
+  "s000": {
+   "source": "medic",
+   "image": "918095867218817026_0__ef6305cc8d.jpg",
+   "label": "severe",
+   "category": "fire"
+  },
+  "s001": {
+   "source": "medic",
+   "image": "925146864264945664_0__c7804a0aec.jpg",
+   "label": "mild",
+   "category": "fire"
+  },
+  "s002": {
+   "source": "medic",
+   "image": "accrafloods_2016-06-14_22-46-26__7573488279.jpg",
+   "label": "little_or_none",
+   "category": "flood"
+  },
+  "s003": {
+   "source": "mmbd",
+   "image": "flood_952.jpg",
+   "label": "Moderate",
+   "category": "Flood"
+  },
+  "s004": {
+   "source": "medic",
+   "image": "909916266911150080_0__733bcdd926.jpg",
+   "label": "little_or_none",
+   "category": "hurricane"
+  },
+  "s005": {
+   "source": "mmbd",
+   "image": "flood_549.jpg",
+   "label": "Catastrophic",
+   "category": "Flood"
+  },
+  "s006": {
+   "source": "medic",
+   "image": "buildingcollapse_2015-03-27_00-49-20__4ec2bcfee6.jpg",
+   "label": "mild",
+   "category": "other_disaster"
+  },
+  "s007": {
+   "source": "mmbd",
+   "image": "landslides_582.jpg",
+   "label": "Mild",
+   "category": "Landslides"
+  },
+  "s008": {
+   "source": "medic",
+   "image": "ruby_typhoon_mild_im_61__3dde9e0f23.jpg",
+   "label": "mild",
+   "category": "flood"
+  },
+  "s009": {
+   "source": "medic",
+   "image": "673363121658925060_0__8f30ce793e.jpg",
+   "label": "little_or_none",
+   "category": "flood"
+  },
+  "s010": {
+   "source": "mmbd",
+   "image": "tropical_storm_556.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s011": {
+   "source": "medic",
+   "image": "695646203908919296_0__c03021fdf6.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s012": {
+   "source": "medic",
+   "image": "wreckedcar_2016-12-29_10-58-01__30baec172f.jpg",
+   "label": "severe",
+   "category": "other_disaster"
+  },
+  "s013": {
+   "source": "medic",
+   "image": "wreckedcar_2016-11-28_03-00-32__6a20b61dcf.jpg",
+   "label": "mild",
+   "category": "other_disaster"
+  },
+  "s014": {
+   "source": "mmbd",
+   "image": "flood_752.jpg",
+   "label": "Moderate",
+   "category": "Flood"
+  },
+  "s015": {
+   "source": "mmbd",
+   "image": "wildfire_35.jpg",
+   "label": "Catastrophic",
+   "category": "Wildfire"
+  },
+  "s016": {
+   "source": "mmbd",
+   "image": "tropical_storm_519.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s017": {
+   "source": "medic",
+   "image": "forrestfire_2016-05-05_16-07-25__a22e77c251.jpg",
+   "label": "severe",
+   "category": "fire"
+  },
+  "s018": {
+   "source": "medic",
+   "image": "979626187390676992_0__ea26a858a4.jpg",
+   "label": "severe",
+   "category": "flood"
+  },
+  "s019": {
+   "source": "mmbd",
+   "image": "wildfire_190.jpg",
+   "label": "Moderate",
+   "category": "Wildfire"
+  },
+  "s020": {
+   "source": "mmbd",
+   "image": "wildfire_115.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s021": {
+   "source": "mmbd",
+   "image": "landslides_172.jpg",
+   "label": "Minimal",
+   "category": "Landslides"
+  },
+  "s022": {
+   "source": "medic",
+   "image": "nepal_eq_none_im_25086__cbbfd29a24.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s023": {
+   "source": "mmbd",
+   "image": "wildfire_388.jpg",
+   "label": "Mild",
+   "category": "Wildfire"
+  },
+  "s024": {
+   "source": "mmbd",
+   "image": "wildfire_651.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s025": {
+   "source": "mmbd",
+   "image": "earthquake_54.jpg",
+   "label": "Mild",
+   "category": "Earthquake"
+  },
+  "s026": {
+   "source": "mmbd",
+   "image": "landslides_828.jpg",
+   "label": "Minimal",
+   "category": "Landslides"
+  },
+  "s027": {
+   "source": "medic",
+   "image": "910184650307280896_0__b06c1ae49b.jpg",
+   "label": "mild",
+   "category": "hurricane"
+  },
+  "s028": {
+   "source": "mmbd",
+   "image": "flood_308.jpg",
+   "label": "Severe",
+   "category": "Flood"
+  },
+  "s029": {
+   "source": "mmbd",
+   "image": "earthquake_833.png",
+   "label": "Severe",
+   "category": "Earthquake"
+  },
+  "s030": {
+   "source": "medic",
+   "image": "landslide_2017-10-21_04-49-32__313fbae3b5.jpg",
+   "label": "mild",
+   "category": "landslide"
+  },
+  "s031": {
+   "source": "mmbd",
+   "image": "wildfire_847.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s032": {
+   "source": "mmbd",
+   "image": "flood_875.jpg",
+   "label": "Severe",
+   "category": "Flood"
+  },
+  "s033": {
+   "source": "medic",
+   "image": "nepal_eq_mild_im_29148__06ed01c270.jpg",
+   "label": "mild",
+   "category": "earthquake"
+  },
+  "s034": {
+   "source": "medic",
+   "image": "924065545992982528_0__7fa80ae3ef.jpg",
+   "label": "little_or_none",
+   "category": "fire"
+  },
+  "s035": {
+   "source": "mmbd",
+   "image": "landslides_254.jpg",
+   "label": "Minimal",
+   "category": "Landslides"
+  },
+  "s036": {
+   "source": "medic",
+   "image": "nepal_eq_severe_im_21831__b0d621369e.jpg",
+   "label": "severe",
+   "category": "earthquake"
+  },
+  "s037": {
+   "source": "medic",
+   "image": "000071__004edb19dc.jpg",
+   "label": "severe",
+   "category": "landslide"
+  },
+  "s038": {
+   "source": "mmbd",
+   "image": "tropical_storm_525.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s039": {
+   "source": "medic",
+   "image": "901701090990850048_0__47b4ce8340.jpg",
+   "label": "severe",
+   "category": "flood"
+  },
+  "s040": {
+   "source": "mmbd",
+   "image": "landslides_112.jpg",
+   "label": "Catastrophic",
+   "category": "Landslides"
+  },
+  "s041": {
+   "source": "medic",
+   "image": "000480__2bd2a4ad8c.jpg",
+   "label": "severe",
+   "category": "landslide"
+  },
+  "s042": {
+   "source": "mmbd",
+   "image": "earthquake_880.png",
+   "label": "Catastrophic",
+   "category": "Earthquake"
+  },
+  "s043": {
+   "source": "mmbd",
+   "image": "tropical_storm_304.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s044": {
+   "source": "medic",
+   "image": "917848117084430336_0__d4af2fedce.jpg",
+   "label": "little_or_none",
+   "category": "fire"
+  },
+  "s045": {
+   "source": "medic",
+   "image": "870884328258940928_0__fa54244dec.jpg",
+   "label": "little_or_none",
+   "category": "hurricane"
+  },
+  "s046": {
+   "source": "mmbd",
+   "image": "landslides_812.jpg",
+   "label": "Minimal",
+   "category": "Landslides"
+  },
+  "s047": {
+   "source": "mmbd",
+   "image": "landslides_117.jpg",
+   "label": "Catastrophic",
+   "category": "Landslides"
+  },
+  "s048": {
+   "source": "medic",
+   "image": "wreckedcar_2016-11-25_21-22-45__374f159ca6.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s049": {
+   "source": "mmbd",
+   "image": "landslides_293.jpg",
+   "label": "Mild",
+   "category": "Landslides"
+  },
+  "s050": {
+   "source": "mmbd",
+   "image": "earthquake_987.png",
+   "label": "Severe",
+   "category": "Earthquake"
+  },
+  "s051": {
+   "source": "mmbd",
+   "image": "landslides_19.jpg",
+   "label": "Moderate",
+   "category": "Landslides"
+  },
+  "s052": {
+   "source": "medic",
+   "image": "nepal_eq_none_im_7020__f9de8328f7.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s053": {
+   "source": "mmbd",
+   "image": "tropical_storm_698.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s054": {
+   "source": "medic",
+   "image": "000029__f3cadf1a82.jpg",
+   "label": "mild",
+   "category": "landslide"
+  },
+  "s055": {
+   "source": "mmbd",
+   "image": "tropical_storm_378.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s056": {
+   "source": "medic",
+   "image": "000449__574340d2d5.jpg",
+   "label": "severe",
+   "category": "landslide"
+  },
+  "s057": {
+   "source": "mmbd",
+   "image": "tropical_storm_575.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s058": {
+   "source": "medic",
+   "image": "ecuador_eq_mild_im_1044__adb4829326.jpg",
+   "label": "mild",
+   "category": "earthquake"
+  },
+  "s059": {
+   "source": "medic",
+   "image": "sandydamage_2013-12-20_07-58-16__3881a87ec4.jpg",
+   "label": "little_or_none",
+   "category": "flood"
+  },
+  "s060": {
+   "source": "medic",
+   "image": "961738645903462400_1__5ed3f89416.jpg",
+   "label": "little_or_none",
+   "category": "fire"
+  },
+  "s061": {
+   "source": "mmbd",
+   "image": "wildfire_883.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s062": {
+   "source": "mmbd",
+   "image": "tropical_storm_802.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s063": {
+   "source": "medic",
+   "image": "nepal_eq_severe_im_11433__27c05e844f.jpg",
+   "label": "severe",
+   "category": "hurricane"
+  },
+  "s064": {
+   "source": "medic",
+   "image": "909744481330765824_0__f9ff1dc295.jpg",
+   "label": "mild",
+   "category": "fire"
+  },
+  "s065": {
+   "source": "mmbd",
+   "image": "landslides_23.jpg",
+   "label": "Severe",
+   "category": "Landslides"
+  },
+  "s066": {
+   "source": "mmbd",
+   "image": "flood_119.jpg",
+   "label": "Moderate",
+   "category": "Flood"
+  },
+  "s067": {
+   "source": "mmbd",
+   "image": "flood_970.jpg",
+   "label": "Catastrophic",
+   "category": "Flood"
+  },
+  "s068": {
+   "source": "medic",
+   "image": "hurricanematthew_2017-10-04_17-08-07__1994d7e437.jpg",
+   "label": "little_or_none",
+   "category": "flood"
+  },
+  "s069": {
+   "source": "medic",
+   "image": "treesfalling_2017-02-27_21-18-49__2ac09b08d2.jpg",
+   "label": "mild",
+   "category": "hurricane"
+  },
+  "s070": {
+   "source": "mmbd",
+   "image": "tropical_storm_804.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s071": {
+   "source": "medic",
+   "image": "destruction_2017-10-28_10-37-46__071a740d8b.jpg",
+   "label": "mild",
+   "category": "other_disaster"
+  },
+  "s072": {
+   "source": "mmbd",
+   "image": "tropical_storm_965.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s073": {
+   "source": "mmbd",
+   "image": "tropical_storm_344.jpg",
+   "label": "Minimal",
+   "category": "Tropical Storm"
+  },
+  "s074": {
+   "source": "medic",
+   "image": "907266302569463809_0__e4365a9fb5.jpg",
+   "label": "severe",
+   "category": "hurricane"
+  },
+  "s075": {
+   "source": "medic",
+   "image": "landslide_2017-10-22_21-15-06__8da8d0b1cb.jpg",
+   "label": "mild",
+   "category": "landslide"
+  },
+  "s076": {
+   "source": "mmbd",
+   "image": "earthquake_645.png",
+   "label": "Moderate",
+   "category": "Earthquake"
+  },
+  "s077": {
+   "source": "medic",
+   "image": "000123__6b7fd2827f.jpg",
+   "label": "mild",
+   "category": "landslide"
+  },
+  "s078": {
+   "source": "mmbd",
+   "image": "tropical_storm_371.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s079": {
+   "source": "medic",
+   "image": "building_damage_228__99a52d111f.jpg",
+   "label": "severe",
+   "category": "earthquake"
+  },
+  "s080": {
+   "source": "medic",
+   "image": "593718406282510337_0__b6334f847e.jpg",
+   "label": "severe",
+   "category": "earthquake"
+  },
+  "s081": {
+   "source": "medic",
+   "image": "forrestfire_2017-07-29_18-26-21__138cdac7de.jpg",
+   "label": "severe",
+   "category": "fire"
+  },
+  "s082": {
+   "source": "medic",
+   "image": "nepal_eq_mild_im_15118__9d99be480f.jpg",
+   "label": "mild",
+   "category": "hurricane"
+  },
+  "s083": {
+   "source": "mmbd",
+   "image": "landslides_948.jpg",
+   "label": "Catastrophic",
+   "category": "Landslides"
+  },
+  "s084": {
+   "source": "medic",
+   "image": "nepal_eq_severe_im_9812__b9c0d887b0.jpg",
+   "label": "little_or_none",
+   "category": "fire"
+  },
+  "s085": {
+   "source": "mmbd",
+   "image": "flood_219.jpeg",
+   "label": "Moderate",
+   "category": "Flood"
+  },
+  "s086": {
+   "source": "medic",
+   "image": "destroyedbuilding_2017-03-27_19-29-09__16bee822e9.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s087": {
+   "source": "medic",
+   "image": "destruction_2017-10-28_20-02-03__66e2c0a9f3.jpg",
+   "label": "severe",
+   "category": "other_disaster"
+  },
+  "s088": {
+   "source": "medic",
+   "image": "nepal_eq_severe_im_20460__aff81d4cc5.jpg",
+   "label": "severe",
+   "category": "earthquake"
+  },
+  "s089": {
+   "source": "mmbd",
+   "image": "landslides_870.jpg",
+   "label": "Moderate",
+   "category": "Landslides"
+  },
+  "s090": {
+   "source": "mmbd",
+   "image": "landslides_709.jpg",
+   "label": "Severe",
+   "category": "Landslides"
+  },
+  "s091": {
+   "source": "medic",
+   "image": "1041501169976135681_0__5c83cbb5b6.jpg",
+   "label": "little_or_none",
+   "category": "hurricane"
+  },
+  "s092": {
+   "source": "mmbd",
+   "image": "wildfire_771.jpg",
+   "label": "Catastrophic",
+   "category": "Wildfire"
+  },
+  "s093": {
+   "source": "mmbd",
+   "image": "earthquake_437.png",
+   "label": "Mild",
+   "category": "Earthquake"
+  },
+  "s094": {
+   "source": "mmbd",
+   "image": "tropical_storm_923.jpg",
+   "label": "Mild",
+   "category": "Tropical Storm"
+  },
+  "s095": {
+   "source": "mmbd",
+   "image": "wildfire_89.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s096": {
+   "source": "medic",
+   "image": "nepal_eq_severe_im_41726__0bbe7ce65a.jpg",
+   "label": "severe",
+   "category": "earthquake"
+  },
+  "s097": {
+   "source": "medic",
+   "image": "904979192525316096_0__c23ef82edc.jpg",
+   "label": "severe",
+   "category": "flood"
+  },
+  "s098": {
+   "source": "mmbd",
+   "image": "earthquake_913.png",
+   "label": "Catastrophic",
+   "category": "Earthquake"
+  },
+  "s099": {
+   "source": "mmbd",
+   "image": "landslides_398.jpg",
+   "label": "Moderate",
+   "category": "Landslides"
+  },
+  "s100": {
+   "source": "medic",
+   "image": "nepal_eq_mild_im_25088__ef10e856fb.jpg",
+   "label": "mild",
+   "category": "earthquake"
+  },
+  "s101": {
+   "source": "mmbd",
+   "image": "earthquake_280.jpg",
+   "label": "Minimal",
+   "category": "Earthquake"
+  },
+  "s102": {
+   "source": "medic",
+   "image": "913137600097079299_0__c5b1280135.jpg",
+   "label": "little_or_none",
+   "category": "hurricane"
+  },
+  "s103": {
+   "source": "medic",
+   "image": "ruby_typhoon_mild_im_4601__869704582a.jpg",
+   "label": "mild",
+   "category": "flood"
+  },
+  "s104": {
+   "source": "mmbd",
+   "image": "flood_123.jpg",
+   "label": "Catastrophic",
+   "category": "Flood"
+  },
+  "s105": {
+   "source": "medic",
+   "image": "000450__f6133d5265.jpg",
+   "label": "little_or_none",
+   "category": "landslide"
+  },
+  "s106": {
+   "source": "medic",
+   "image": "921430152189530112_0__1abf285856.jpg",
+   "label": "little_or_none",
+   "category": "other_disaster"
+  },
+  "s107": {
+   "source": "mmbd",
+   "image": "flood_688.jpg",
+   "label": "Moderate",
+   "category": "Flood"
+  },
+  "s108": {
+   "source": "mmbd",
+   "image": "wildfire_823.jpg",
+   "label": "Severe",
+   "category": "Wildfire"
+  },
+  "s109": {
+   "source": "mmbd",
+   "image": "landslides_556.jpg",
+   "label": "Moderate",
+   "category": "Landslides"
+  },
+  "s110": {
+   "source": "mmbd",
+   "image": "wildfire_539.jpg",
+   "label": "Catastrophic",
+   "category": "Wildfire"
+  },
+  "s111": {
+   "source": "medic",
+   "image": "000081__7c178ed54a.jpg",
+   "label": "little_or_none",
+   "category": "landslide"
+  },
+  "s112": {
+   "source": "medic",
+   "image": "yemencrisis_2016-03-03_00-21-30__6d2a88c98b.jpg",
+   "label": "mild",
+   "category": "other_disaster"
+  },
+  "s113": {
+   "source": "medic",
+   "image": "910525745973415938_0__0b33cf24a2.jpg",
+   "label": "severe",
+   "category": "flood"
+  },
+  "s114": {
+   "source": "medic",
+   "image": "927036770004254720_0__8b8433c19e.jpg",
+   "label": "severe",
+   "category": "flood"
+  },
+  "s115": {
+   "source": "medic",
+   "image": "974214144454004736_0__74507f713b.jpg",
+   "label": "mild",
+   "category": "flood"
+  },
+  "s116": {
+   "source": "mmbd",
+   "image": "earthquake_975.png",
+   "label": "Catastrophic",
+   "category": "Earthquake"
+  },
+  "s117": {
+   "source": "mmbd",
+   "image": "earthquake_972.png",
+   "label": "Moderate",
+   "category": "Earthquake"
+  },
+  "s118": {
+   "source": "medic",
+   "image": "000221__d4e2c40176.jpg",
+   "label": "mild",
+   "category": "landslide"
+  },
+  "s119": {
+   "source": "mmbd",
+   "image": "landslides_65.jpg",
+   "label": "Mild",
+   "category": "Landslides"
+  }
+ }
+}

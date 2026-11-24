@@ -1,0 +1,365 @@
+{
+ "seed": 2028,
+ "key": {
+  "e000": {
+   "image": "nepal_eq_none_im_41043.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e001": {
+   "image": "121207.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": ""
+  },
+  "e002": {
+   "image": "115203.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": ""
+  },
+  "e003": {
+   "image": "nepal_eq_none_im_34549.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e004": {
+   "image": "AP23039537273147.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": ""
+  },
+  "e005": {
+   "image": "nepal_eq_none_im_3614.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e006": {
+   "image": "nepal_eq_none_im_5548.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e007": {
+   "image": "592359497684930560_0.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e008": {
+   "image": "building_damage_3005.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e009": {
+   "image": "593812168145010689_0.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "nepal_2015"
+  },
+  "e010": {
+   "image": "933982454557310976_0.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "iran_iraq_2017"
+  },
+  "e011": {
+   "image": "nepal_eq_none_im_23823.jpg",
+   "split": "test",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e012": {
+   "image": "932700076996116480_0.jpg",
+   "split": "val",
+   "group": "debris",
+   "event": "iran_iraq_2017"
+  },
+  "e013": {
+   "image": "ecuador_eq_severe_im_666.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "ecuador_2016"
+  },
+  "e014": {
+   "image": "nepal_eq_none_im_15941.jpg",
+   "split": "test",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e015": {
+   "image": "building_damage_1788.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e016": {
+   "image": "909385864500989952_0.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "mexico_2017"
+  },
+  "e017": {
+   "image": "597507973469085697_0.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "nepal_2015"
+  },
+  "e018": {
+   "image": "913102526383144961_1.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "mexico_2017"
+  },
+  "e019": {
+   "image": "nepal_eq_severe_im_42747.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "nepal_2015"
+  },
+  "e020": {
+   "image": "building_damage_842.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e021": {
+   "image": "977825702903889921_3.jpg",
+   "split": "val",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e022": {
+   "image": "ecuador_eq_mild_im_226.jpg",
+   "split": "test",
+   "group": "damaged_only",
+   "event": "ecuador_2016"
+  },
+  "e023": {
+   "image": "nepal_eq_mild_im_13985.jpg",
+   "split": "test",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e024": {
+   "image": "nepal_eq_mild_im_18380.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e025": {
+   "image": "nepal_eq_none_im_35488.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e026": {
+   "image": "building_damage_2544.jpg",
+   "split": "test",
+   "group": "debris",
+   "event": ""
+  },
+  "e027": {
+   "image": "nepal_eq_none_im_28397.jpg",
+   "split": "test",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e028": {
+   "image": "nepal_eq_none_im_24678.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e029": {
+   "image": "nepal_eq_none_im_12473.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e030": {
+   "image": "114555.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e031": {
+   "image": "118605.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e032": {
+   "image": "912346493809577984_1.jpg",
+   "split": "val",
+   "group": "debris",
+   "event": "mexico_2017"
+  },
+  "e033": {
+   "image": "000_339P2GD.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": ""
+  },
+  "e034": {
+   "image": "nepal_eq_none_im_21257.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e035": {
+   "image": "ecuador_eq_severe_im_387.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "ecuador_2016"
+  },
+  "e036": {
+   "image": "road_damage_587.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e037": {
+   "image": "bridge_damage_1014.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e038": {
+   "image": "nepal_eq_mild_im_14118.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e039": {
+   "image": "building_damage_3019.jpg",
+   "split": "test",
+   "group": "debris",
+   "event": ""
+  },
+  "e040": {
+   "image": "ecuador_eq_severe_im_1212.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "ecuador_2016"
+  },
+  "e041": {
+   "image": "nepal_eq_mild_im_33377.jpg",
+   "split": "test",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e042": {
+   "image": "ecuador_eq_none_im_1227.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "ecuador_2016"
+  },
+  "e043": {
+   "image": "nepal_eq_none_im_12962.png",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e044": {
+   "image": "nepal_eq_mild_im_20174.jpg",
+   "split": "test",
+   "group": "debris",
+   "event": "nepal_2015"
+  },
+  "e045": {
+   "image": "961185489318481920_0.jpg",
+   "split": "val",
+   "group": "debris",
+   "event": ""
+  },
+  "e046": {
+   "image": "nepal_eq_none_im_395.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e047": {
+   "image": "ecuador_eq_unlabelled_im_881.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "ecuador_2016"
+  },
+  "e048": {
+   "image": "929989443913691136_2.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "iran_iraq_2017"
+  },
+  "e049": {
+   "image": "nepal_eq_severe_im_12487.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e050": {
+   "image": "building_damage_525.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e051": {
+   "image": "nepal_eq_none_im_10269.jpg",
+   "split": "val",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e052": {
+   "image": "nepal_eq_severe_im_15969.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e053": {
+   "image": "598048733931024384_0.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "nepal_2015"
+  },
+  "e054": {
+   "image": "797914254544289792_0.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": ""
+  },
+  "e055": {
+   "image": "nepal_eq_none_im_40481.jpg",
+   "split": "test",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e056": {
+   "image": "nepal_eq_none_im_20389.jpg",
+   "split": "train",
+   "group": "little",
+   "event": "nepal_2015"
+  },
+  "e057": {
+   "image": "592632680233185280_0.jpg",
+   "split": "train",
+   "group": "damaged_only",
+   "event": "nepal_2015"
+  },
+  "e058": {
+   "image": "ecuador_eq_none_im_1050.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": "ecuador_2016"
+  },
+  "e059": {
+   "image": "damaged_seg_266.jpg",
+   "split": "train",
+   "group": "debris",
+   "event": ""
+  }
+ }
+}

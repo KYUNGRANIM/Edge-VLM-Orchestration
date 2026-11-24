@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Severity Check</title>
+<style>
+  body { margin: 0; background: #fafafa; color: #1d1d1f; font: 15px/1.5 -apple-system, "Apple SD Gothic Neo", sans-serif; }
+  header { position: sticky; top: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+           padding: 10px 16px; background: #fff; border-bottom: 1px solid #ddd; }
+  header .grow { flex: 1; }
+  button, .file { padding: 6px 12px; border: 1px solid #bbb; border-radius: 6px; background: #fff; cursor: pointer; font: inherit; }
+  button:disabled { opacity: .4; cursor: default; }
+  .file input { display: none; }
+  #warn { color: #b00020; }
+  .defs { margin: 10px 16px; padding: 10px 14px; background: #fff; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+  .defs p { margin: 2px 0; }
+  main { padding: 0 16px 40px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  #img { max-width: min(100%, 900px); max-height: 62vh; border-radius: 6px; }
+  .choices { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .choices button { min-width: 150px; padding: 10px 14px; }
+  .choices button.on { background: #1d1d1f; color: #fff; border-color: #1d1d1f; }
+</style>
+</head>
+<body>
+<header>
+  <b id="pos"></b><span id="done"></span><span id="warn"></span>
+  <span class="grow"></span>
+  <button id="prev">← 이전</button><button id="next">다음 →</button>
+  <button id="export">Export JSON</button>
+  <label class="file">Import<input type="file" id="import" accept=".json"></label>
+</header>
+<div class="defs">
+  <p><b>사진에 보이는 것만으로</b> 피해 정도를 고르세요 (MEDIC 기준). 키보드 1–4로 고르면 다음 사진으로 넘어가요.</p>
+  <p><b>1 little_or_none</b> — 피해가 보이지 않거나 미미함 (no or minor damage)</p>
+  <p><b>2 mild</b> — 부분적인 피해 (e.g., partially damaged buildings, roads, or areas)</p>
+  <p><b>3 severe</b> — 대규모 파괴, 시설을 쓸 수 없는 수준 (substantial destruction; non-livable / non-usable)</p>
+  <p><b>4 판단 불가</b> — 사진만으로는 피해 정도를 판단할 수 없음</p>
+</div>
+<main>
+  <img id="img" alt="disaster image">
+  <div class="choices" id="choices"></div>
+</main>
+<script>
+const ITEMS = __ITEMS__;
+const CHOICES = [["little_or_none", "1 little_or_none"], ["mild", "2 mild"], ["severe", "3 severe"], ["unjudgeable", "4 판단 불가"]];
+const STORE = "__STORE__";
+let S = { labels: {}, pos: 0 };
+try { const raw = localStorage.getItem(STORE); if (raw) S = JSON.parse(raw); } catch (e) { warn(); }
+
+function warn() { document.getElementById("warn").textContent = " · 자동 저장 안 됨 — Export를 자주 하세요"; }
+function save() { try { localStorage.setItem(STORE, JSON.stringify(S)); } catch (e) { warn(); } }
+
+function choose(value) {
+  S.labels[ITEMS[S.pos].id] = value;
+  if (S.pos < ITEMS.length - 1) S.pos++;
+  save(); render();
+}
+
+function render() {
+  const it = ITEMS[S.pos];
+  document.getElementById("img").src = it.img;
+  const box = document.getElementById("choices");
+  box.replaceChildren(...CHOICES.map(([v, label]) => {
+    const b = document.createElement("button");
+    b.textContent = label;
+    b.className = S.labels[it.id] === v ? "on" : "";
+    b.onclick = () => choose(v);
+    return b;
+  }));
+  document.getElementById("pos").textContent = `사진 ${S.pos + 1} / ${ITEMS.length}`;
+  document.getElementById("done").textContent = ` · 완료 ${Object.keys(S.labels).length}`;
+  document.getElementById("prev").disabled = S.pos === 0;
+  document.getElementById("next").disabled = !S.labels[it.id] || S.pos === ITEMS.length - 1;
+}
+
+document.addEventListener("keydown", e => {
+  const n = Number(e.key);
+  if (n >= 1 && n <= 4) choose(CHOICES[n - 1][0]);
+  if (e.key === "ArrowLeft" && S.pos > 0) { S.pos--; save(); render(); }
+});
+document.getElementById("prev").onclick = () => { S.pos--; save(); render(); };
+document.getElementById("next").onclick = () => { S.pos++; save(); render(); };
+document.getElementById("export").onclick = () => {
+  const body = { exported_at: new Date().toISOString(), n_items: ITEMS.length,
+                 n_complete: Object.keys(S.labels).length, labels: S.labels };
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(body, null, 1)], { type: "application/json" }));
+  a.download = `${STORE}_${body.exported_at.slice(0, 16).replace(/[:T]/g, "-")}.json`;
+  a.click();
+};
+document.getElementById("import").onchange = async e => {
+  const data = JSON.parse(await e.target.files[0].text());
+  S.labels = { ...S.labels, ...data.labels };
+  save(); render();
+};
+
+if (!(S.pos >= 0 && S.pos < ITEMS.length)) S.pos = 0;
+render();
+</script>
+</body>
+</html>
