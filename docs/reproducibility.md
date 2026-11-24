@@ -28,8 +28,8 @@ routers in `deployment/routers/` byte for byte (identical MD5).
 
 **Article numbers and figures.** All twelve rows of Table I and every result quoted in Sections IV and V were
 reproduced by the scripts in `docs/reviewers/README.md`. The one exception is the 460 KiB image-distribution estimate,
-which is arithmetic rather than a script output. `analysis/figures.py` redrew Fig. 4 and Fig. 5; the image files and
-their data files were byte-identical to the committed ones.
+which is arithmetic rather than a script output. `analysis/figures.py` redrew Fig. 4 and Fig. 5; the PNG images and
+their data files were byte-identical to the committed ones, and the PDFs differ only in their embedded creation date.
 
 **Parsing rules.** `analysis/output_checks/parsing_rules_reimpl.py` re-implements the category and severity rules in
 `analysis/output_checks/parsing_rules.tex`, the listing given in the response to reviewers. It reproduced every stored
