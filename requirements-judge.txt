@@ -1,11 +1,11 @@
-# Only needed to re-run the paid GPT-4o judge (offline/code/pipeline/00_gpt_judge.py).
+# Only needed to re-run the paid GPT-4o judge (profiling/code/pipeline/00_gpt_judge.py).
 #
 # The judge scores it produces are already committed at
-# offline/results/pipeline_outputs/00_gpt_judge_scores_v4.jsonl, so reproducing
+# profiling/results/pipeline_outputs/00_gpt_judge_scores.jsonl, so reproducing
 # the paper does NOT require this. Install it only to score a new collection.
 #
 #     pip install -r requirements.txt -r requirements-judge.txt
 #     export OPENAI_API_KEY="..."
-#     python offline/code/pipeline/00_gpt_judge.py --estimate-only   # check cost first
+#     python profiling/code/pipeline/00_gpt_judge.py --estimate-only   # check cost first
 
 openai==2.14.0

@@ -1,5 +1,5 @@
 # Only needed on the Raspberry Pi / Jetson devices that host the inference
-# servers in online/code/servers/ and runtime_policy/code/device_servers/.
+# servers in heldout/code/servers/ and deployment/servers/.
 #
 # A machine that only reproduces the analysis does not need any of this.
 #
