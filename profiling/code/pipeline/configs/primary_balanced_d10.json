@@ -1,0 +1,22 @@
+{
+  "name": "primary_balanced_d10",
+  "description": "Primary operating point for the paper: balanced semantic quality with quality-regret constrained minimum-cost tier selection.",
+  "tiers": ["m5_a", "pi_a", "jetson"],
+  "quality_weights": {
+    "cat": 0.30,
+    "sev": 0.30,
+    "text": 0.40
+  },
+  "cost_weights": {
+    "latency": 0.10,
+    "overhead": 0.10,
+    "energy": 0.80
+  },
+  "quality_regret_delta": 0.10,
+  "router": {
+    "type": "two_stage_cascade",
+    "stage1": "decision_tree_depth4",
+    "stage2": "decision_tree_depth4",
+    "features": ["category", "severity", "confidence", "agreement"]
+  }
+}
