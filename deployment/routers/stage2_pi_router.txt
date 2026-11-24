@@ -1,0 +1,46 @@
+|--- num__pi_cat_match <= -0.4461
+|   |--- cat__pia_cat_hurricane <= 0.5000
+|   |   |--- num__m5_conf_min <= -0.0826
+|   |   |   |--- num__m5_conf_mean <= 0.6249
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_mean >  0.6249
+|   |   |   |   |--- class: 0
+|   |   |--- num__m5_conf_min >  -0.0826
+|   |   |   |--- cat__pia_cat_earthquake <= 0.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__pia_cat_earthquake >  0.5000
+|   |   |   |   |--- class: 1
+|   |--- cat__pia_cat_hurricane >  0.5000
+|   |   |--- cat__m5a_cat_other_disaster <= 0.5000
+|   |   |   |--- num__pia_sev <= -0.4679
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pia_sev >  -0.4679
+|   |   |   |   |--- class: 1
+|   |   |--- cat__m5a_cat_other_disaster >  0.5000
+|   |   |   |--- num__pia_min_logprob <= 0.8204
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__pia_min_logprob >  0.8204
+|   |   |   |   |--- class: 1
+|--- num__pi_cat_match >  -0.4461
+|   |--- num__pia_sev <= -0.4679
+|   |   |--- cat__pia_cat_other_disaster <= 0.5000
+|   |   |   |--- cat__pia_cat_landslide <= 0.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- cat__pia_cat_landslide >  0.5000
+|   |   |   |   |--- class: 1
+|   |   |--- cat__pia_cat_other_disaster >  0.5000
+|   |   |   |--- num__pia_min_logprob <= 0.6904
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pia_min_logprob >  0.6904
+|   |   |   |   |--- class: 0
+|   |--- num__pia_sev >  -0.4679
+|   |   |--- cat__pia_cat_other_disaster <= 0.5000
+|   |   |   |--- num__pi_sev_match <= -0.2162
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__pi_sev_match >  -0.2162
+|   |   |   |   |--- class: 1
+|   |   |--- cat__pia_cat_other_disaster >  0.5000
+|   |   |   |--- num__m5_conf_min <= -0.0826
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_min >  -0.0826
+|   |   |   |   |--- class: 1

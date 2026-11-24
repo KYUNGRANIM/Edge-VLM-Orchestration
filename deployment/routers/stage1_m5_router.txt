@@ -1,0 +1,46 @@
+|--- num__m5a_sev <= 0.6101
+|   |--- cat__m5a_cat_other_disaster <= 0.5000
+|   |   |--- cat__m5a_cat_hurricane <= 0.5000
+|   |   |   |--- num__m5a_sev <= -0.5022
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5a_sev >  -0.5022
+|   |   |   |   |--- class: 0
+|   |   |--- cat__m5a_cat_hurricane >  0.5000
+|   |   |   |--- num__m5_conf_mean <= -0.9562
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_conf_mean >  -0.9562
+|   |   |   |   |--- class: 0
+|   |--- cat__m5a_cat_other_disaster >  0.5000
+|   |   |--- num__m5_conf_mean <= -0.9562
+|   |   |   |--- num__m5_sev_range <= 0.3361
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_sev_range >  0.3361
+|   |   |   |   |--- class: 1
+|   |   |--- num__m5_conf_mean >  -0.9562
+|   |   |   |--- num__m5_conf_mean <= 0.3342
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_mean >  0.3342
+|   |   |   |   |--- class: 0
+|--- num__m5a_sev >  0.6101
+|   |--- cat__m5a_cat_other_disaster <= 0.5000
+|   |   |--- num__m5_cat_agree <= 0.2901
+|   |   |   |--- num__m5_cat_agree <= -1.2815
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_cat_agree >  -1.2815
+|   |   |   |   |--- class: 1
+|   |   |--- num__m5_cat_agree >  0.2901
+|   |   |   |--- cat__m5a_cat_landslide <= 0.5000
+|   |   |   |   |--- class: 1
+|   |   |   |--- cat__m5a_cat_landslide >  0.5000
+|   |   |   |   |--- class: 1
+|   |--- cat__m5a_cat_other_disaster >  0.5000
+|   |   |--- num__m5_conf_min <= -0.0694
+|   |   |   |--- num__m5_sev_agree <= -0.9548
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__m5_sev_agree >  -0.9548
+|   |   |   |   |--- class: 0
+|   |   |--- num__m5_conf_min >  -0.0694
+|   |   |   |--- num__m5_conf_mean <= 1.3020
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__m5_conf_mean >  1.3020
+|   |   |   |   |--- class: 0
